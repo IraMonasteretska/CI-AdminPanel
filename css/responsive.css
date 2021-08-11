@@ -1,0 +1,251 @@
+@media(max-width:1440.8px) {
+    .content__header h1 {
+        font-size: 32px;
+    }
+
+    .content__header h2 {
+        font-size: 26px;
+    }
+
+    .content__header h3 {
+        font-size: 21px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .content__header h1 {
+        font-size: 24px;
+    }
+
+    .searchsection input {
+        height: 38px;
+        padding-right: 38px;
+    }
+
+    .searchsection .searchbtn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .greenbtn {
+        height: 38px;
+        padding: 0 14px;
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:1024.8.8px) {}
+
+@media(max-width:991.8px) {
+    .searchsection {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .table-wrapper .table {
+        font-size: 14px;
+    }
+
+    .header__username {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .tablecolsthree tr th,
+    .tablecolsthree tr td {
+        min-width: 120px;
+        word-break: break-all;
+    }
+
+    .table-wrapper {
+        overflow: auto;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+
+    .content-wrapper,
+    .small-sb .content-wrapper {
+        max-width: 100%;
+    }
+
+    .small-sb .left-sb {
+        max-width: 240px;
+    }
+
+    .header__leftsect {
+        max-width: 140px;
+    }
+
+    .header__rightsect {
+        max-width: calc(100% - 140px);
+    }
+
+    .header.small-sb .header__rightsect {
+        max-width: calc(100% - 140px);
+    }
+
+    .header.small-sb .header__leftsect {
+        max-width: 140px;
+    }
+
+    .header.small-sb .logoimg-small {
+        display: none;
+    }
+
+    .header.small-sb .logoimg {
+        display: block;
+    }
+
+    .left-sb {
+        position: fixed;
+        left: 0;
+        height: 100vh;
+        bottom: 0;
+        z-index: 15;
+        min-height: 100vh;
+        transform: translateX(-240px);
+        -webkit-transform: translateX(-240px);
+        -moz-transform: translateX(-240px);
+        -ms-transform: translateX(-240px);
+        -o-transform: translateX(-240px);
+    }
+
+    .small-sb .left-sb {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    .sidebar-backdrop {
+        position: fixed;
+        z-index: 12;
+        background-color: #000;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        transition: .8s;
+        -webkit-transition: .8s;
+        -moz-transition: .8s;
+        -ms-transition: .8s;
+        -o-transition: .8s;
+    }
+
+    .sidebar-backdrop.show {
+        opacity: .5;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .left-sb {
+        /* display: none; */
+    }
+
+    /* v2 */
+    .v2.header.small-sb .header__leftsect a p {
+        display: block;
+    }
+
+    .v2.header .header__leftsect a p {
+        white-space: initial;
+        text-align: center;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .logoimg-small,
+    .header.small-sb .logoimg-small {
+        display: block;
+    }
+
+    .logoimg,
+    .header.small-sb .logoimg {
+        display: none;
+    }
+
+    .header__leftsect,
+    .header.small-sb .header__leftsect {
+        max-width: 60px;
+    }
+
+    .header__rightsect,
+    .header.small-sb .header__rightsect {
+        max-width: calc(100% - 60px);
+    }
+
+    .header__username {
+        display: none;
+    }
+
+    .header__userdropdown .header__username {
+        display: block;
+        padding: 10px 20px 0 20px;
+        text-align: center;
+    }
+
+    .header__rightsect {
+        padding-right: 15px;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+    .header__userdropdown ul {
+        padding-top: 5px;
+    }
+
+    .footline {
+        font-size: 12px;
+    }
+
+    .footline a {
+        margin-left: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* v2 */
+    .v2.header.small-sb .header__leftsect a p,
+    .v2.header .header__leftsect a p {
+        display: none;
+    }
+
+    .header.v2 .dropdownuserava i {
+        display: block;
+    }
+}
