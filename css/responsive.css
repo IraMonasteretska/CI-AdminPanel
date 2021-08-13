@@ -1,5 +1,8 @@
 @media(max-width:1440.8px) {
-    .content__header h1 {
+
+    .content__header h1,
+    .titleh1,
+    .content__header h2.titleh1 {
         font-size: 32px;
     }
 
@@ -14,7 +17,10 @@
 }
 
 @media(max-width:1199.8px) {
-    .content__header h1 {
+
+    .content__header h1,
+    .titleh1,
+    .content__header h2.titleh1 {
         font-size: 24px;
     }
 
@@ -34,9 +40,55 @@
         font-size: 14px;
     }
 
+    .radioboxes__wrapper label {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    .radioboxes__wrapper label:last-child {
+        margin-right: 0;
+    }
+
+    .radiosection p {
+        margin-bottom: 5px;
+    }
+
+    .radiosection {
+        margin-bottom: 5px;
+    }
+
 }
 
-@media(max-width:1024.8.8px) {}
+@media(max-width:1024.8px) {
+    .general-smallmodal .modal-dialog {
+        max-width: 440px;
+    }
+
+    .general-smallmodal .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .modal-btn {
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+
+    .modalform__group input {
+        height: 42px;
+    }
+
+
+
+
+
+}
 
 @media(max-width:991.8px) {
     .searchsection {
@@ -53,17 +105,19 @@
         padding-right: 10px;
     }
 
-    .tablecolsthree tr th,
-    .tablecolsthree tr td {
+    .generaltable tr th,
+    .generaltable tr td {
         min-width: 120px;
-        word-break: break-all;
+        /* word-break: break-all; */
     }
 
     .table-wrapper {
         overflow: auto;
     }
 
-
+    .content__header .select2 {
+        margin-bottom: 20px;
+    }
 
 
 
@@ -147,29 +201,12 @@
         opacity: .5;
     }
 
-
-
-
-
-
-
-
-
-
-
-    .left-sb {
-        /* display: none; */
+    .modalform__group .row .col-md-6:not(:last-child),
+    .form-group {
+        margin-bottom: 10px;
     }
 
-    /* v2 */
-    .v2.header.small-sb .header__leftsect a p {
-        display: block;
-    }
 
-    .v2.header .header__leftsect a p {
-        white-space: initial;
-        text-align: center;
-    }
 
 
 
@@ -230,19 +267,48 @@
         margin-left: 0;
     }
 
-
-
-
-
-
-
-    /* v2 */
-    .v2.header.small-sb .header__leftsect a p,
-    .v2.header .header__leftsect a p {
-        display: none;
+    .general-smallmodal .modal-dialog {
+        max-width: 100%;
     }
 
-    .header.v2 .dropdownuserava i {
-        display: block;
+    .general-smallmodal .modal-footer,
+    .general-smallmodal .modal-body {
+        padding: 15px;
     }
+
+    .generaltable {
+        width: 500px;
+    }
+
+    .generaltable tr th:last-child,
+    .generaltable tr td:last-child {
+        width: 100px;
+    }
+
+    .radiosection {
+        margin-bottom: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .general-smallmodal .title {
+        font-size: 18px;
+    }
+
+    .modalform__group label,
+    .modalsubtitle,
+    .radioboxes__wrapper label {
+        font-size: 14px;
+    }
+
 }

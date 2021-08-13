@@ -57,12 +57,17 @@ $(document).ready(function () {
         });
     }
 
+    // upload file
+    $('.chooseFile').bind('change', function () {
+        var filename = $(this).val();
+        $(this).next('.file-upload').find('.noFile').text(filename.replace("C:\\fakepath\\", ""));
+    });
 
+    // custom selects
 
-
-
-
-
+    $(".custom-select").select2({
+        placeholder: "Select a state",
+    });
 
 
 

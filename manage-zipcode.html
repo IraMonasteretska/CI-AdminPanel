@@ -9,38 +9,40 @@
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <header class="header v2">
+    <header class="header">
         <div class="header__leftsect">
             <a href="#">
+                <img class="logoimg" src="img/dashlogo.png" alt="logo">
                 <img class="logoimg-small" src="img/logo-small.png" alt="logo">
-                <p>Care Indeed Admin</p>
             </a>
         </div>
         <div class="header__rightsect">
             <button class="header__burger">
-                <img src="img/v2-menu-icon.svg" alt="menu">
+                <img src="img/menu-icon.svg" alt="menu">
             </button>
             <div class="header__user">
                 <div class="d-flex">
+                    <span class="header__username">
+                        Admin@careindeed.com
+                        <i>(admin)</i>
+                    </span>
                     <div class="header__userpic rounded-pill">
                         <img src="img/user.png" alt="user photo">
                     </div>
                 </div>
 
                 <div class="header__userdropdown">
-                    <div class="dropdownuserava">
-                        <div class="header__userpic rounded-pill">
-                            <img src="img/user.png" alt="user photo">
-                        </div>
+                    <span class="header__username">
                         Admin@careindeed.com
                         <i>(admin)</i>
-                    </div>
+                    </span>
                     <ul>
                         <li><a href="#">Edit Profile</a></li>
                         <li><a href="#">Log Out</a></li>
@@ -51,7 +53,7 @@
     </header>
 
     <main>
-        <div class="row no-gutters pagecontent v2">
+        <div class="row no-gutters pagecontent">
             <aside class="left-sb">
                 <ul>
                     <li class="item">
@@ -60,8 +62,8 @@
                             <span>Application Settings</span>
                         </a>
                         <ul class="sublist">
-                            <li>
-                                <a href="#">
+                            <li class="active">
+                                <a href="manage-zipcode.html">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Zipcode</span>
                                 </a>
@@ -237,12 +239,6 @@
                         </ul>
                     </li>
                 </ul>
-
-
-
-
-
-
             </aside>
             <div class="content-wrapper">
                 <div class="content-section">
@@ -251,17 +247,19 @@
                         <div class="row no-gutters">
                             <div class="col-lg-6">
                                 <div class="input-group searchsection">
-                                    <input type="text" class="form-control" placeholder="Recipient's username"
-                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <input type="text" class="form-control" placeholder="Search">
                                     <div class="input-group-append">
-                                        <button class="btn searchbtn" type="button" id="button-addon2"></button>
+                                        <button class="btn searchbtn" type="button"></button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="btngroup d-flex justify-content-end">
-                                    <button class="greenbtn">Upload Zipcodes</button>
-                                    <button class="greenbtn">Add New</button>
+                                    <button class="greenbtn" data-toggle="modal" data-target="#uploadmodal">
+                                        Upload Zipcodes</button>
+                                    <button class="greenbtn" data-toggle="modal" data-target="#addnew-modal">
+                                        Add New
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +267,7 @@
 
                     <div class="content__body">
                         <div class="table-wrapper">
-                            <table class="table table-bordered table-hover tablecolsthree">
+                            <table class="table table-bordered table-hover generaltable">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">Zipcode</th>
@@ -282,7 +280,8 @@
                                         <td>94170</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -294,7 +293,8 @@
                                         <td>12345</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -306,7 +306,8 @@
                                         <td>94003</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -318,7 +319,8 @@
                                         <td>94005</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -330,7 +332,8 @@
                                         <td>94010</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -342,7 +345,8 @@
                                         <td>94011</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -354,7 +358,8 @@
                                         <td>94012</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -366,7 +371,8 @@
                                         <td>94014</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -378,7 +384,8 @@
                                         <td>94015</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -390,7 +397,8 @@
                                         <td>94016</td>
                                         <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                data-target="#editzip-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -466,11 +474,7 @@
                     Copyright © 2021 <a href="#">Care Indeed</a>. All rights reserved.
                 </div>
             </div>
-
         </div>
-
-
-
     </main>
 
 
@@ -483,18 +487,90 @@
 
 
 
+    <!-- Modals -->
+    <div class="modal fade general-smallmodal" id="uploadmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="close">
+                </button> -->
+                <div class="modal-body">
+                    <p class="title">Upload File</p>
+                    <div class="inpdropfield">
+                        <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
+                        <label class="file-upload file-select" for="chooseFile">
+                            <span class="centerbox">
+                                <span class="file-select-button" id="fileName">
+                                    <img src="img/upload2.svg" alt="icon">
+                                    <span class="imp"><span>Upload</span> a file or drag and
+                                        drop</span>
+                                    <span class="imp">(File requirement: PDF, PPT and less than
+                                        1 MG )</span>
+                                </span>
+                                <span class="file-select-name noFile" id="noFile">
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn modal-btn allow-btn">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade general-smallmodal" id="addnew-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="modalform">
+                    <div class="modal-body">
+                        <p class="title">Add New ZipCode</p>
+                        <div class="form-group modalform__group">
+                            <label for="code">Code</label>
+                            <input type="text" class="form-control" id="code" placeholder="Enter Zipcode">
+                        </div>
+                        <div class="form-group modalform__group checkfield">
+                            <input type="checkbox" id="check">
+                            <label for="check">Is Active?</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn modal-btn allow-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
+    <div class="modal fade general-smallmodal" id="editzip-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="modalform">
+                    <div class="modal-body">
+                        <p class="title">Edit ZipCode</p>
+                        <div class="form-group modalform__group">
+                            <label for="code">Code</label>
+                            <input type="text" id="code" placeholder="Enter Zipcode">
+                        </div>
+                        <div class="form-group modalform__group checkfield">
+                            <input type="checkbox" id="check">
+                            <label for="check">Is Active?</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn modal-btn allow-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 
