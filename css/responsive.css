@@ -107,7 +107,7 @@
 
     .generaltable tr th,
     .generaltable tr td {
-        min-width: 120px;
+        min-width: 200px;
         /* word-break: break-all; */
     }
 
@@ -202,7 +202,8 @@
     }
 
     .modalform__group .row .col-md-6:not(:last-child),
-    .form-group {
+    .form-group,
+    .servimg {
         margin-bottom: 10px;
     }
 

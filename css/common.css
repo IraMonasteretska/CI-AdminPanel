@@ -763,7 +763,8 @@ header.header {
     -o-border-radius: 8px;
 }
 
-.modalform__group label {
+.modalform__group label,
+.inpdropfield label.labtit {
     font-size: 16px;
     font-family: Avenir heavy;
     margin: 0 0 5px 0;
@@ -1050,6 +1051,7 @@ header.header {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     padding-top: 10px;
+    display: flex;
 }
 
 .form-group textarea:focus {
@@ -1070,9 +1072,13 @@ header.header {
     overflow: auto;
 }
 
+.servimg {
+    margin-bottom: 1rem;
+}
 
-
-
+.checkinrow label {
+    margin-right: 10px;
+}
 
 
 

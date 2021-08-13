@@ -62,7 +62,7 @@
                             <span>Application Settings</span>
                         </a>
                         <ul class="sublist">
-                            <li class="active">
+                            <li>
                                 <a href="manage-zipcode.html">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Zipcode</span>
@@ -92,7 +92,7 @@
                                     <span>Manage FAQs</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Explore Services</span>
@@ -243,7 +243,7 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__header">
-                        <h1>Manage Zipcodes</h1>
+                        <h1>Manage Explore Services</h1>
                         <div class="row no-gutters">
                             <div class="col-lg-6">
                                 <div class="input-group searchsection">
@@ -255,8 +255,6 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="btngroup d-flex justify-content-end">
-                                    <button class="greenbtn" data-toggle="modal" data-target="#uploadmodal">
-                                        Upload Zipcodes</button>
                                     <button class="greenbtn" data-toggle="modal" data-target="#addnew-modal">
                                         Add New
                                     </button>
@@ -270,18 +268,24 @@
                             <table class="table table-bordered table-hover generaltable">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">Zipcode</th>
+                                        <th scope="col">Service name</th>
+                                        <th scope="col">Link URL</th>
+                                        <th scope="col">Link Text</th>
+                                        <th scope="col">Sort Order</th>
                                         <th scope="col">Is Active</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>94170</td>
+                                        <td>Care bundle</td>
+                                        <td>/CareBundle</td>
+                                        <td>Learn More</td>
+                                        <td>1</td>
                                         <td>True</td>
                                         <td>
                                             <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
+                                                data-target="#addnew-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -290,115 +294,14 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>12345</td>
+                                        <td>CI-Community</td>
+                                        <td>/ci-community</td>
+                                        <td>Learn More</td>
+                                        <td>2</td>
                                         <td>True</td>
                                         <td>
                                             <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94003</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94005</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94010</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94011</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94012</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94014</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94015</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>94016</td>
-                                        <td>True</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#editzip-modal">
+                                                data-target="#addnew-modal">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -460,16 +363,7 @@
                             </ul>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
-
-
-
                 <div class="footline">
                     Copyright © 2021 <a href="#">Care Indeed</a>. All rights reserved.
                 </div>
@@ -488,39 +382,7 @@
 
 
     <!-- Modals -->
-    <div class="modal fade general-smallmodal" id="uploadmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="img/close.svg" alt="close">
-                </button> -->
-                <div class="modal-body">
-                    <p class="title">Upload File</p>
-                    <div class="inpdropfield">
-                        <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
-                        <label class="file-upload file-select" for="chooseFile">
-                            <span class="centerbox">
-                                <span class="file-select-button" id="fileName">
-                                    <img src="img/upload2.svg" alt="icon">
-                                    <span class="imp"><span>Upload</span> a file or drag and
-                                        drop</span>
-                                    <span class="imp">(File requirement: PDF, PPT and less than
-                                        1 MG )</span>
-                                </span>
-                                <span class="file-select-name noFile" id="noFile">
-                                </span>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn modal-btn allow-btn">Upload</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="modal fade general-smallmodal" id="addnew-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -528,10 +390,55 @@
             <div class="modal-content">
                 <form action="" class="modalform">
                     <div class="modal-body">
-                        <p class="title">Add New ZipCode</p>
+                        <!-- <p class="title">Modal Title</p> -->
+                        <div class="inpdropfield servimg">
+                            <label for="chooseFile" class="labtit">Service Image</label>
+                            <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
+                            <label class="file-upload file-select" for="chooseFile">
+                                <span class="centerbox">
+                                    <span class="file-select-button" id="fileName">
+                                        <img src="img/upload2.svg" alt="icon">
+                                        <span class="imp"><span>Upload</span> a file or drag and
+                                            drop</span>
+                                        <span class="imp">(File requirement: PNG, JPG and less than
+                                            1 MG )</span>
+                                    </span>
+                                    <span class="file-select-name noFile" id="noFile">
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="servname">Service Name</label>
+                                    <input type="text" id="servname" class="form-control"
+                                        placeholder="Enter Service Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="linktext">Link Text</label>
+                                    <input type="text" id="linktext" class="form-control" placeholder="Enter Link Text">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="linkurl">Link URL</label>
+                                    <input type="text" id="linkurl" class="form-control" placeholder="Enter Link URL">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="sortorder">Sort Order</label>
+                                    <input type="text" id="sortorder" class="form-control"
+                                        placeholder="Enter Sort order greater than 0" value="0">
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group modalform__group">
-                            <label for="code">Code</label>
-                            <input type="text" class="form-control" id="code" placeholder="Enter Zipcode">
+                            <label for="descriptionta">Description</label>
+                            <textarea id="descriptionta" cols="30" rows="10" placeholder="Enter Description"></textarea>
                         </div>
                         <div class="form-group modalform__group checkfield">
                             <input type="checkbox" id="check">
@@ -547,30 +454,7 @@
         </div>
     </div>
 
-    <div class="modal fade general-smallmodal" id="editzip-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="" class="modalform">
-                    <div class="modal-body">
-                        <p class="title">Edit ZipCode</p>
-                        <div class="form-group modalform__group">
-                            <label for="code">Code</label>
-                            <input type="text" id="code" placeholder="Enter Zipcode">
-                        </div>
-                        <div class="form-group modalform__group checkfield">
-                            <input type="checkbox" id="check2">
-                            <label for="check2">Is Active?</label>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn modal-btn allow-btn">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+
 
 
 
