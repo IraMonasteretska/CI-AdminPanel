@@ -69,23 +69,40 @@ $(document).ready(function () {
         placeholder: "Select a state",
     });
 
+    // Select - cau-adduser.html
+
+    const addSelectAll = matches => {
+        if (matches.length > 0) {
+            // Insert a special "Select all matches" item at the start of the 
+            // list of matched items.
+            return [
+                { id: 'selectAll', text: 'Select all', matchIds: matches.map(match => match.id) },
+                ...matches
+            ];
+        }
+    };
+
+    const handleSelection = event => {
+        if (event.params.data.id === 'selectAll') {
+            $('#my-select').val(event.params.data.matchIds);
+            $('#my-select').trigger('change');
+        };
+    };
+
+    $('#my-select').select2({
+        minimumInputLength: 0,
+        multiple: true,
+        sorter: addSelectAll,
+        tags: true,
+    });
+    $('#my-select').on('select2:select', handleSelection);
 
 
+    // text editor
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if ($('body *').is('#editor')) {
+        CKEDITOR.replace('editor');
+    }
 
 
 

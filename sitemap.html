@@ -6,18 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pages</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <ol>
-        <li><a target="_blank" href="manage-zipcode.html">Manage Zipcode</a></li>
-        <li class="disabled"><a target="_blank" href="manage-zipcode.html">Manage Service</a></li>
-        <li><a target="_blank" href="manage-zipcode.html">Manage Assessment Questions</a></li>
-        <li><a target="_blank" href="manage-subscription-plans.html">Manage Subscription Plans</a></li>
-        <li><a target="_blank" href="manage-faqs.html">Manage FAQs</a></li>
-        <li><a target="_blank" href="manage-explore-services.html">Manage Explore Services</a></li>
-        <li><a target="_blank" href="manage-ppe-items.html">Manage PPE Items</a></li>
-    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <h3>Application Settings</h3>
+                <ol>
+                    <li><a target="_blank" href="manage-zipcode.html">Manage Zipcode</a></li>
+                    <li class="disabled"><a target="_blank" href="#">Manage Service</a></li>
+                    <li><a target="_blank" href="manage-zipcode.html">Manage Assessment Questions</a></li>
+                    <li><a target="_blank" href="manage-subscription-plans.html">Manage Subscription Plans</a></li>
+                    <li><a target="_blank" href="manage-faqs.html">Manage FAQs</a></li>
+                    <li><a target="_blank" href="manage-explore-services.html">Manage Explore Services</a></li>
+                    <li><a target="_blank" href="manage-ppe-items.html">Manage PPE Items</a></li>
+                    <li><a target="_blank" href="manage-coupon.html">Manage Coupon</a></li>
+                    <li class="disabled"><a target="_blank" href="#">Manage Pricing</a></li>
+                    <li class="disabled"><a target="_blank" href="#">Manage Promotion</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-3">
+                <h3>User Management</h3>
+                <ol>
+                    <li>
+                        <a target="_blank" href="care-admin-users.html">Care Admin Users</a>
+                        <ul>
+                            <li><a target="_blank" href="cau-adduser.html">Add user</a></li>
+                            <li class="disabled"><a target="_blank" href="#">Edit User</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-lg-3">
+                <h3>Upgrade Requests</h3>
+                <ol>
+                    <li class="disabled"><a target="_blank" href="#">Care Bundle</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-3">
+                <h3>CareIndeed Masters</h3>
+                <ol>
+                    <li>
+                        <a target="_blank" href="testimonials.html">Testimonials</a>
+                        <ul>
+                            <li><a target="_blank" href="testimonial-add.html">Add testimonials</a></li>
+                            <li class="disabled"><a target="_blank" href="#">Edit testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a target="_blank" href="manage-slider.html">Manage Slider</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </body>
 
 
@@ -35,10 +79,15 @@
         margin: 0;
     }
 
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+    }
+
     li {
         font-family: 'Montserrat', sans-serif;
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     li.disabled a {

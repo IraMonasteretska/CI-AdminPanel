@@ -80,7 +80,8 @@
         -o-border-radius: 6px;
     }
 
-    .modalform__group input {
+    .modalform__group input,
+    .pageform__group input {
         height: 42px;
     }
 
@@ -118,6 +119,17 @@
     .content__header .select2 {
         margin-bottom: 20px;
     }
+
+    .btn.status {
+        font-weight: normal;
+        width: 86px;
+        height: 36px;
+    }
+
+
+
+
+
 
 
 
@@ -203,12 +215,18 @@
 
     .modalform__group .row .col-md-6:not(:last-child),
     .form-group,
+    .pageform__group .row .col-md-6:not(:last-child),
     .servimg {
         margin-bottom: 10px;
     }
 
+    .bigpage-form .form-group textarea {
+        height: 70px;
+    }
 
-
+    .page-bottombtns {
+        max-width: 400px;
+    }
 
 
 
@@ -307,6 +325,7 @@
     }
 
     .modalform__group label,
+    .pageform__group label,
     .modalsubtitle,
     .radioboxes__wrapper label {
         font-size: 14px;

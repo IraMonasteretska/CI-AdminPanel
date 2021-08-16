@@ -30,6 +30,8 @@
 body {
     background: #F6F7FA;
     font-family: Avenir book;
+    position: relative;
+    overflow-x: hidden;
 }
 
 button,
@@ -541,7 +543,7 @@ header.header {
 
 .generaltable tr th,
 .generaltable tr td {
-    min-width: 200px;
+    min-width: 150px;
 }
 
 .content__body .pagination ul {
@@ -625,6 +627,13 @@ header.header {
     line-height: 120%;
     letter-spacing: -0.01em;
     margin-bottom: 20px;
+}
+
+.general-smallmodal .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid #ececec;
 }
 
 /* upload section */
@@ -743,7 +752,8 @@ header.header {
     margin-bottom: 0;
 }
 
-.modalform__group input {
+.modalform__group input,
+.pageform__group input {
     width: 100%;
     height: 42px;
 
@@ -764,14 +774,20 @@ header.header {
 }
 
 .modalform__group label,
-.inpdropfield label.labtit {
+.inpdropfield label.labtit,
+.pageform__group label {
     font-size: 16px;
     font-family: Avenir heavy;
     margin: 0 0 5px 0;
     cursor: pointer;
 }
 
-.modalform__group input[type="checkbox"] {
+.pageform__group label span {
+    color: #FF9334;
+}
+
+.modalform__group input[type="checkbox"],
+.pageform__group input[type="checkbox"] {
     display: none;
 }
 
@@ -942,7 +958,8 @@ header.header {
     width: 100% !important;
 }
 
-.select2-container .select2-selection--single {
+.select2-container .select2-selection--single,
+.select2-selection.select2-selection--multiple {
     height: 42px;
     border: 1px solid #DEE5EF;
     border-radius: 8px;
@@ -988,13 +1005,19 @@ header.header {
     width: 6px;
 }
 
+.select2-container .select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar {
+    width: 4px;
+}
+
 .select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track,
-.form-group textarea::-webkit-scrollbar-track {
+.form-group textarea::-webkit-scrollbar-track,
+.select2-container .select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 .select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb,
-.form-group textarea::-webkit-scrollbar-thumb {
+.form-group textarea::-webkit-scrollbar-thumb,
+.select2-container .select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar-thumb {
     background-color: rgb(152, 152, 152);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1079,6 +1102,203 @@ header.header {
 .checkinrow label {
     margin-right: 10px;
 }
+
+.btn.status {
+    color: #fff;
+    width: 90px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn.status.active {
+    background: #269FA3;
+}
+
+.btn.status.active:hover {
+    background: #1E7B7E;
+}
+
+.btn.status.inactive {
+    background: #FF9334;
+}
+
+.btn.status.inactive:hover {
+    background: #CC662C;
+}
+
+.modal-description p:last-child {
+    margin-bottom: 0;
+}
+
+.seleckchecklist {
+    position: relative;
+}
+
+.select2-selection.select2-selection--multiple {
+    padding: 0 0 0 0;
+}
+
+.select2-search.select2-search--inline {
+    display: none;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    margin: 0;
+    font-size: 14px;
+    font-family: Avenir book;
+    height: 100%;
+    line-height: 42px;
+}
+
+.select2-container .select2-search--inline .select2-search__field::placeholder {
+    color: #999;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #DEE5EF;
+    outline: 0;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #ebfeff;
+}
+
+.select2-container--default .select2-selection--multiple:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    margin-left: -8px;
+    height: 0;
+    right: 6px;
+    margin-top: -2px;
+    top: 50%;
+    width: 0;
+    cursor: pointer
+}
+
+.select2-container--open .select2-selection--multiple:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    border-color: transparent transparent #888 transparent;
+    border-width: 0 5px 7px 5px;
+    height: 0;
+    right: 6px;
+    margin-left: -8px;
+    margin-top: -2px;
+    top: 50%;
+    width: 0;
+    cursor: pointer
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    /* display: flex; */
+    display: block;
+    margin: 0;
+    width: 100%;
+    overflow: auto;
+    max-height: 100%;
+    padding-right: 20px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #269fa3;
+    border: 1px solid #269fa3;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    color: #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #000;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover,
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
+    background-color: #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    color: #fff;
+    margin-top: 7px;
+}
+
+.page-bottombtns {
+    max-width: 500px;
+    width: 100%;
+}
+
+.page-bottombtns button {
+    width: calc(50% - 20px);
+}
+
+.page-bottombtns button:last-child {
+    margin-left: 20px;
+}
+
+.file-select-button p,
+.file-select-button .imp {
+    font-family: Avenir book;
+}
+
+.table-slidersubtitle,
+.table-slidertitle,
+.table-description {
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.table-slidersubtitle {
+    font-size: 18px;
+}
+
+.table-slidertitle {
+    font-size: 24px;
+}
+
+.table-description {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.table img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* line-height: 42px;
+font-size: 14px;
+font-family: Avenir book;
+padding-left: 16px; */
+
+
+
+
+
+
 
 
 

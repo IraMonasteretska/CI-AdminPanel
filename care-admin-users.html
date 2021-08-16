@@ -104,7 +104,7 @@
                                     <span>Manage PPE Items</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="#">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Coupon</span>
@@ -130,7 +130,7 @@
                             <span>User Management</span>
                         </a>
                         <ul class="sublist">
-                            <li>
+                            <li class="active">
                                 <a href="#">
                                     <i class="fa fa-circle"></i>
                                     <span>Care Admin Users</span>
@@ -243,7 +243,7 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__header">
-                        <h1>Coupons</h1>
+                        <h1>Users</h1>
                         <div class="row no-gutters">
                             <div class="col-lg-6">
                                 <div class="input-group searchsection">
@@ -255,7 +255,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="btngroup d-flex justify-content-end">
-                                    <button class="greenbtn" data-toggle="modal" data-target="#addnew-modal">
+                                    <button class="greenbtn">
                                         Add New
                                     </button>
                                 </div>
@@ -268,64 +268,46 @@
                             <table class="table table-bordered table-hover generaltable">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Code</th>
-                                        <th scope="col">Is Percentage?</th>
-                                        <th scope="col">Value</th>
-                                        <th scope="col">Packages</th>
-                                        <th scope="col">Subscriptions</th>
-                                        <th scope="col">Status</th>
+                                        <th scope="col">FullName</th>
+                                        <th scope="col">UserName</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Zip</th>
+                                        <th scope="col">Mobile</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Coupon FTW</td>
-                                        <td>CBGOLIVE1</td>
-                                        <td>False</td>
-                                        <td>50.00</td>
-                                        <td>Starter</td>
-                                        <td>Auto Renewal, 3 Months</td>
+                                        <td>Noor All Safaet</td>
+                                        <td>noors@careindeed.com</td>
+                                        <td>noors@careindeed.com</td>
+                                        <td>94025</td>
+                                        <td>01716133029</td>
+                                        <td>01716133029</td>
                                         <td>
-                                            <button class="btn status inactive" data-toggle="modal"
-                                                data-target="#confirm-modal">Inactive</button>
+                                            <button class="tablebtn tablebtn-edit">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Coupon April</td>
-                                        <td>CBGOLIVE2</td>
-                                        <td>True</td>
-                                        <td>40.00</td>
-                                        <td>Starter, Premium, Create Your Own</td>
-                                        <td>Auto Renewal, 1 Month, 2 Months</td>
+                                        <td>Denn Agustin</td>
+                                        <td>denna@careindeed.com</td>
+                                        <td>denna@careindeed.com</td>
+                                        <td>94025</td>
+                                        <td>6503384577</td>
+                                        <td>6503384577</td>
                                         <td>
-                                            <button class="btn status inactive" data-toggle="modal"
-                                                data-target="#confirm-modal">Inactive</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CAREB21</td>
-                                        <td>CAREB21</td>
-                                        <td>True</td>
-                                        <td>20.00</td>
-                                        <td>Starter, Premium</td>
-                                        <td>Auto Renewal, 2 Months, 3 Months, 4 Months, 5 Months, 6 Months, 7 Months, 8
-                                            Months, 9 Months, 11 Months, 12 Months</td>
-                                        <td>
-                                            <button class="btn status active" data-toggle="modal"
-                                                data-target="#confirm-modal">Active</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>MDAY21</td>
-                                        <td>MDAY21</td>
-                                        <td>True</td>
-                                        <td>10.00</td>
-                                        <td>Starter, Premium, Create Your Own</td>
-                                        <td>Auto Renewal, 2 Months, 3 Months, 4 Months, 5 Months, 6 Months, 7 Months, 8
-                                            Months, 9 Months, 10 Months, 11 Months, 12 Months</td>
-                                        <td>
-                                            <button class="btn status active" data-toggle="modal"
-                                                data-target="#confirm-modal">Active</button>
+                                            <button class="tablebtn tablebtn-edit">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -395,106 +377,6 @@
 
 
 
-
-
-
-
-
-
-    <!-- Modals -->
-
-
-    <div class="modal fade general-smallmodal" id="addnew-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="" class="modalform">
-                    <div class="modal-body">
-                        <p class="title">New Coupon</p>
-                        <p class="subtitle">Coupon information</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="couponname">Name</label>
-                                    <input type="text" id="couponname" class="form-control"
-                                        placeholder="Enter Coupon Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="couponcode">Code</label>
-                                    <input type="text" id="couponcode" class="form-control"
-                                        placeholder="Enter coupon code">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="couponvalue">Value</label>
-                                    <input type="text" id="couponvalue" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="couponpackages">Packages</label>
-                                    <input type="text" id="couponpackages" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group modalform__group">
-                                    <label for="couponsub">Subscriptions</label>
-                                    <input type="text" id="couponsub" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group modalform__group">
-                                    <label for="coupondescr">Description</label>
-                                    <input type="text" id="coupondescr" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group checkfield">
-                                    <input type="checkbox" id="check">
-                                    <label for="check">Is Active?</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group checkfield">
-                                    <input type="checkbox" id="check2">
-                                    <label for="check2">Percentage?</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn modal-btn allow-btn">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade general-smallmodal" id="confirm-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="" class="modalform">
-                    <div class="modal-body">
-                        <p class="title">Please Confirm</p>
-                        <div class="modal-description text-center">
-                            <p>Are you sure, you want to change the status?</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn modal-btn allow-btn">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
 
 
