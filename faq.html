@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Assessment Questions</title>
+    <title>FAQ</title>
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -74,7 +74,7 @@
                                     <span>Manage Service</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="#">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Assessment Questions</span>
@@ -188,7 +188,7 @@
                                     <span>Manage Page</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#">
                                     <i class="fa fa-question-circle"></i>
                                     <span>FAQ</span>
@@ -243,7 +243,7 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__header">
-                        <h1>Manage Assessment Questions</h1>
+                        <h1>Manage Question and Answer</h1>
                         <div class="row no-gutters">
                             <div class="col-lg-6">
                                 <div class="input-group searchsection">
@@ -255,7 +255,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="btngroup d-flex justify-content-end">
-                                    <button class="greenbtn" data-toggle="modal" data-target="#addnew-modal">
+                                    <button class="greenbtn">
                                         Add New
                                     </button>
                                 </div>
@@ -265,24 +265,26 @@
 
                     <div class="content__body">
                         <div class="table-wrapper">
-                            <table class="table table-bordered table-hover generaltable">
+                            <table class="table table-bordered table-hover generaltable action-wider">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">Service name</th>
-                                        <th scope="col">Is Active</th>
+                                        <th scope="col">Question</th>
+                                        <th scope="col">Answer</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>What is Care Indeed Home Care Services?</td>
                                         <td>
-                                            Does the care recipient need home health care (i.e., medications injection,
-                                            post-surgical wounds, accidental, or osmotic, syringe or IV)?
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
                                         </td>
-                                        <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -291,13 +293,16 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>What is non-medical in-home care?</td>
                                         <td>
-                                            Does the care recipient need full assistance in transferring?
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
                                         </td>
-                                        <td>True</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -306,11 +311,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Does the care recipient need hospice care?</td>
-                                        <td>True</td>
+                                        <td>What type of caregiver can I expect?</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -319,11 +329,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Does the care recipient currently have cognitive issues?</td>
-                                        <td>True</td>
+                                        <td>What tips should I follow?</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -332,11 +347,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Does the care recipient smoke?</td>
-                                        <td>True</td>
+                                        <td>Can I request the same caregiver the next time I need backup care?</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -345,11 +365,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Does the care recipient have a pet?</td>
-                                        <td>True</td>
+                                        <td>Can my health insurance cover for the cost of home care?</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -358,11 +383,70 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Does the care recipient need Covid-19 care (Additional fee applies)?</td>
-                                        <td>True</td>
+                                        <td>Can I have home care in other locations aside from my home?</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>What is In-home Respite?</td>
+                                        <td>
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is home care only available for seniors?</td>
+                                        <td>
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
+                                                <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Why should I choose home health care?</td>
+                                        <td>
+                                            Non-medical care generally does not include intensive rehabilitative
+                                            sessions, heart rhythm monitoring, or blood-sugar level management. Instead,
+                                            non-medical care sees that the basic needs are met for those who cannot
+                                            fully function by themselves. Such care includes personal care, meal
+                                            preparation, and maintaining a safe home environment.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
@@ -372,7 +456,10 @@
                                     </tr>
                                 </tbody>
                             </table>
+
+
                         </div>
+
                         <div class="pagination">
                             <ul>
                                 <li>
@@ -434,75 +521,13 @@
 
 
 
-    <!-- Modals -->
 
-    <div class="modal fade general-smallmodal" id="addnew-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="" class="modalform">
-                    <div class="modal-body">
-                        <div class="form-group modalform__group">
-                            <label for="code">Question</label>
-                            <input type="text" id="code" class="form-control" placeholder="Enter Question">
-                        </div>
-                        <div class="form-group modalform__group checkfield">
-                            <input type="checkbox" id="check">
-                            <label for="check">Is Active?</label>
-                        </div>
-                        <div class="form-group question-answers">
-                            <p class="modalsubtitle">Select default answer(s) for subscription plans</p>
-                            <div class="row">
-                                <div class="col-xl-4">
-                                    <div class="radiosection radiosection_starter">
-                                        <p>Starter</p>
-                                        <div class="radioboxes__wrapper">
-                                            <input type="radio" id="starter1" name="starter">
-                                            <label for="starter1">Yes</label>
-                                            <input type="radio" id="starter2" name="starter">
-                                            <label for="starter2">No</label>
-                                            <input type="radio" id="starter3" checked name="starter">
-                                            <label for="starter3">Yes/No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <div class="radiosection radiosection_premium">
-                                        <p>Premium</p>
-                                        <div class="radioboxes__wrapper">
-                                            <input type="radio" id="premium1" name="premium">
-                                            <label for="premium1">Yes</label>
-                                            <input type="radio" id="premium2" name="premium">
-                                            <label for="premium2">No</label>
-                                            <input type="radio" id="premium3" checked name="premium">
-                                            <label for="premium3">Yes/No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <div class="radiosection radiosection_yourown">
-                                        <p>Create Your Own</p>
-                                        <div class="radioboxes__wrapper">
-                                            <input type="radio" id="yourown1" name="yourown">
-                                            <label for="yourown1">Yes</label>
-                                            <input type="radio" id="yourown2" name="yourown">
-                                            <label for="yourown2">No</label>
-                                            <input type="radio" id="yourown3" checked name="yourown">
-                                            <label for="yourown3">Yes/No</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn modal-btn allow-btn">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
 
 
     <script src="js/jquery.js"></script>

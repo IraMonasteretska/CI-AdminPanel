@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add testimonial</title>
+    <title>Add Menu</title>
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -164,7 +164,7 @@
                             <span>CareIndeed Masters</span>
                         </a>
                         <ul class="sublist">
-                            <li class="active">
+                            <li>
                                 <a href="#">
                                     <i class="fa fa-circle"></i>
                                     <span>Testimonials</span>
@@ -176,7 +176,7 @@
                                     <span>Manage Slider</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#">
                                     <i class="fa fa-circle"></i>
                                     <span>Menu Setting</span>
@@ -243,63 +243,96 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__body">
-                        <h1 class="titleh1">Add Testimonial</h1>
-                        <form action="" class="bigpage-form">
+                        <h1 class="titleh1">Add Manage Menu</h1>
+                        <form action="" class="bigpage-form addmanagemenu-form">
                             <div class="row">
                                 <div class="col-xl-4 col-lg-12">
-                                    <div class="form-group pageform__group">
-                                        <label for="testimonby">Testimonials By <span>*</span></label>
-                                        <input type="text" id="testimonby" class="form-control">
+                                    <div class="form-group modalform__group checkfield">
+                                        <input type="radio" id="menucheck1" name="menuradio">
+                                        <label for="menucheck1">Menu</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
-                                    <div class="form-group pageform__group">
-                                        <label for="testimontitle">Title <span>*</span></label>
-                                        <input type="text" id="testimontitle" class="form-control">
+                                    <div class="form-group modalform__group checkfield">
+                                        <input type="radio" id="menucheck2" name="menuradio">
+                                        <label for="menucheck2">Is Sub Menu</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
-                                    <div class="form-group pageform__group">
-                                        <label>Rating <span>*</span></label>
-                                        <select class="custom-select inmodal" data-placeholder="Select">
-                                            <option value=""></option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
+                                    <div class="form-group modalform__group checkfield">
+                                        <input type="radio" id="menucheck3" name="menuradio">
+                                        <label for="menucheck3">Is Sub-Sub Menu</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group pageform__group">
-                                        <label>Testimonials Content <span>*</span></label>
-                                        <div id="editor">
-                                            <p>This is the editor content.</p>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group pageform__group manuselecthide">
+                                                <label for="parentid">Menu</label>
+                                                <select class="custom-select inmodal" data-placeholder="Select">
+                                                    <option value=""></option>
+                                                    <option value="1">Services</option>
+                                                    <option value="2">Home</option>
+                                                    <option value="3">Locations</option>
+                                                    <option value="4">Contact-Us</option>
+                                                    <option value="5">Our Mission</option>
+                                                    <option value="6">Testimonials</option>
+                                                    <option value="7">Care Provider Training</option>
+                                                    <option value="8">Caregiver Portal</option>
+                                                    <option value="9">Join our care community network</option>
+                                                    <option value="10">Live-In Care</option>
+                                                    <option value="11">Hourly Care</option>
+                                                    <option value="12">Non-Medical Staffing</option>
+                                                    <option value="13">What is a caregiver?</option>
+                                                    <option value="14">Ask vanessa</option>
+                                                    <option value="15">Newsletter</option>
+                                                    <option value="16">Classes and seminars</option>
+                                                    <option value="17">Campbell</option>
+                                                    <option value="18">East Bay – Walnut Creek</option>
+                                                    <option value="19">Menlo Park</option>
+                                                    <option value="20">Palo Alto</option>
+                                                    <option value="21">San Francisco</option>
+                                                    <option value="22">San Mateo</option>
+                                                    <option value="23">Seattle</option>
+                                                    <option value="24">Bellevue</option>
+                                                    <option value="25">Virtual Reality Training</option>
+                                                    <option value="26">Parkinson</option>
+                                                    <option value="27">EducationResource</option>
+                                                    <option value="28">EducationResourceDetails</option>
+                                                    <option value="29">checklist01</option>
+                                                    <option value="30">checklist01</option>
+                                                    <option value="31">checklist01</option>
+                                                    <option value="32">checklist01</option>
+                                                    <option value="33">checklist01</option>
+                                                    <option value="34">checklist01</option>
+                                                    <option value="35">checklist01</option>
+                                                    <option value="36">checklist01</option>
+                                                    <option value="37">checklist01</option>
+                                                    <option value="38">checklist01</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group pageform__group">
+                                                <label for="manuname" class="menufield-title">Menu Name</label>
+                                                <input type="text" id="manuname" class="form-control">
+                                            </div>
+                                            <div class="form-group pageform__group">
+                                                <label for="setorder">Set Order <span>*</span></label>
+                                                <input type="text" id="setorder" class="form-control">
+                                            </div>
+                                            <div class="form-group modalform__group checkfield">
+                                                <input type="checkbox" id="independent">
+                                                <label for="independent">Is Independent</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-7">
-                                    <div class="form-group pageform__group">
-                                        <label>Image</label>
-                                        <div class="inpdropfield">
-                                            <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
-                                            <label class="file-upload file-select" for="chooseFile">
-                                                <span class="centerbox">
-                                                    <span class="file-select-button" id="fileName">
-                                                        <img src="img/upload2.svg" alt="icon">
-                                                        <span class="imp"><span>Upload</span> a file or drag and
-                                                            drop</span>
-                                                        <span class="imp">(File requirement: PDF, PPT and less than
-                                                            1 MG )</span>
-                                                    </span>
-                                                    <span class="file-select-name noFile" id="noFile">
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+
+
+
+
+
+
+
                             </div>
                             <div class="form-group modalform__group checkfield">
                                 <input type="checkbox" id="check">

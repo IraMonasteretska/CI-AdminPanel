@@ -14,6 +14,15 @@
         font-size: 21px;
     }
 
+    .table-slidersubtitle {
+        font-size: 16px;
+    }
+
+    .table-slidertitle {
+        font-size: 22px;
+    }
+
+
 }
 
 @media(max-width:1199.8px) {
@@ -308,8 +317,13 @@
         margin-bottom: 0;
     }
 
+    .content__header {
+        margin-bottom: 25px;
+    }
 
-
+    .searchsection {
+        margin-bottom: 15px;
+    }
 
 
 
@@ -332,3 +346,14 @@
     }
 
 }
+
+
+
+
+
+/* 
+font-family: Avenir-Medium; 
+ font-family: 'Montserrat', sans-serif;
+  font-family: Avenir heavy;
+   font-family: Avenir black;
+  */

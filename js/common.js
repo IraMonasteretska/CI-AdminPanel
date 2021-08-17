@@ -104,8 +104,77 @@ $(document).ready(function () {
         CKEDITOR.replace('editor');
     }
 
+    // Menu settings page - change menu
+    $('.change-menu').change(function () {
+        $('.varmenu').hide();
+
+        var menuChangeSelect = $('.change-menu').val();
+        switch (menuChangeSelect) {
+            case '1':
+                $('.varmenu.varmenu_main').show();
+                break;
+            case '2':
+                $('.varmenu.varmenu_sub').show();
+                break;
+            case '3':
+                $('.varmenu.varmenu_subsub').show();
+                break;
+            case '4':
+                $('.varmenu.varmenu_indepentent').show();
+                break;
+            default:
+                console.log('default');
+        }
+    });
+
+    // add manage menu
+    $('input[name="menuradio"]').on('change', function () {
+        if ($('#menucheck1').is(':checked')) {
+            console.log('1')
+            $('.manuselecthide').hide();
+            $('.menufield-title').text('Menu Name');
+
+        } else if ($('#menucheck2').is(':checked')) {
+            console.log('2')
+            $('.manuselecthide').show();
+            $('.menufield-title').text('Sub Menu Name');
+            $('.manuselecthide label').text('Menu');
+
+        } else if ($('#menucheck3').is(':checked')) {
+            console.log('3')
+            $('.manuselecthide').show();
+            $('.menufield-title').text('Sub Sub Menu Name');
+            $('.manuselecthide label').text('Sub Menu');
+
+        }
 
 
+
+
+
+    });
+
+    // qa page type - select
+    $('#qa-pagetype').change(function () {
+        $('.qa-categoryselect').hide();
+
+        var qaPageTypeVal = $('#qa-pagetype').val();
+        switch (qaPageTypeVal) {
+            case '1':
+                $('.qa-categoryselect').hide();
+                break;
+            case '2':
+                $('.qa-categoryselect').show();
+                break;
+            case '3':
+                $('.qa-categoryselect').show();
+                break;
+            case '4':
+                $('.qa-categoryselect').hide();
+                break;
+
+        }
+    });
 
 
 
@@ -117,3 +186,5 @@ $(document).ready(function () {
 
 
 });
+
+
