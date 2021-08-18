@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage PPE Items</title>
+    <title>Blogs</title>
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -98,7 +98,7 @@
                                     <span>Manage Explore Services</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="manage-ppe-items.html">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage PPE Items</span>
@@ -194,7 +194,7 @@
                                     <span>FAQ</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="blogs.html">
                                     <i class="fa fa-circle"></i>
                                     <span>Blogs</span>
@@ -243,9 +243,9 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__header">
-                        <h1>Manage PPE Items</h1>
+                        <h1>Manage Blog</h1>
                         <div class="row no-gutters">
-                            <div class="col-lg-6">
+                            <div class="col-lg-4">
                                 <div class="input-group searchsection">
                                     <input type="text" class="form-control" placeholder="Search">
                                     <div class="input-group-append">
@@ -253,11 +253,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-4">
+                                <div class="form-group pageform__group">
+                                    <select class="custom-select change-menu">
+                                        <option value="1">Recent-oldest</option>
+                                        <option value="2">Oldest-recent</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
                                 <div class="btngroup d-flex justify-content-end">
-                                    <button class="greenbtn" data-toggle="modal" data-target="#addnew-modal">
+                                    <a href="add-blog.html" class="greenbtn">
                                         Add New
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -265,167 +273,221 @@
 
                     <div class="content__body">
                         <div class="table-wrapper">
-                            <table class="table table-bordered table-hover generaltable">
+                            <table class="table table-bordered table-hover generaltable action-wider">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">Item Name</th>
-                                        <th scope="col">Price Per Item</th>
-                                        <th scope="col">Sort Order</th>
-                                        <th scope="col">Is Active</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Seo title</th>
+                                        <th scope="col">Seo Description</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>10 Surgical Masks</td>
-                                        <td>10.00</td>
-                                        <td>1</td>
-                                        <td>True</td>
+                                        <td>The Benefits of In Home Care in San Francisco</td>
+                                        <td>The Benefits of In Home Care in San Francisco</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            When a person is no longer able to look after themselves due to age or
+                                            illness, there are several options.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Shoe Covers</td>
-                                        <td>8.00</td>
-                                        <td>2</td>
-                                        <td>True</td>
+                                        <td>Home Care Services in the Bay Area</td>
+                                        <td>Home Care Services in the Bay Area</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            As people age, their need for medical care tends to increase. Which, if
+                                            you’re part of healthcare staffing in the Bay Area, is something you are
+                                            aware of.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Reusable PPE Gown</td>
-                                        <td>55.00</td>
-                                        <td>3</td>
-                                        <td>True</td>
+                                        <td>A Look at Home Care Services for Bay Area Residents</td>
+                                        <td>A Look at Home Care Services for Bay Area Residents</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            What is hospital sitting? Bay Area residents may already be familiar with
+                                            this form of care, but for those who are not, let’s have a look at what
+                                            exactly is involved in providing this form of care.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Reusable Cloth Mask</td>
-                                        <td>5.00</td>
-                                        <td>4</td>
-                                        <td>True</td>
+                                        <td>Ignite Your Spark: Release Fear And Overwhelm And Find Your Way Back To Your
+                                            Light</td>
+                                        <td>Ignite Your Spark: Release Fear And Overwhelm And Find Your Way Back To Your
+                                            Light</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            In this blog, Kelby shared some ideas you can implement immediately to get
+                                            your spark glowing again.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Box of Gloves</td>
-                                        <td>17.00</td>
-                                        <td>5</td>
-                                        <td>True</td>
+                                        <td>Care Indeed Nurses Offer COVID-19 Testing at Educational Sites | Workplace
+                                            Solutions</td>
+                                        <td>Care Indeed Nurses Offer COVID-19 Testing at Educational Sites | Workplace
+                                            Solutions</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Frequent COVID-19 testing is one of the best ways to increase confidence and
+                                            mitigate risks. Our nurses make testing efficient, safe, and an easy way to
+                                            quickly confirm that your team and staff are free from active COVID-19
+                                            infections.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Face Shields (2 Per Set)</td>
-                                        <td>5.00</td>
-                                        <td>6</td>
-                                        <td>True</td>
+                                        <td>Long Term Care Insurance & Home Care</td>
+                                        <td>Long Term Care Insurance & Home Care</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Consultation with your current insurance provider is recommended to ensure
+                                            you or your loved one's plan includes coverage for home care services.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>10 KN95 Masks</td>
-                                        <td>35.00</td>
-                                        <td>7</td>
-                                        <td>True</td>
+                                        <td>Smart Senior Care Technology, Finding Support in Next Generation Remote
+                                            Monitoring</td>
+                                        <td>Smart Senior Care Technology, Finding Support in Next Generation Remote
+                                            Monitoring</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            As we turn to technology to improve our lives in so many different ways, it
+                                            only seems a logical consequence that “Smart Technology” will offer us the
+                                            needed support to care for our loved ones.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Complete PPE Kit</td>
-                                        <td>90.00</td>
-                                        <td>8</td>
-                                        <td>True</td>
+                                        <td>Meet Our Care Indeeder of the Month- Alex Zetino</td>
+                                        <td>Meet Our Care Indeeder of the Month- Alex Zetino</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            eet our Care Indeeder of the Month- Alexander Zetino. Alex has been a
+                                            constant source of support for some of our clients since he joined Care
+                                            Indeed. Let's take a closer look at his caregiving journey and his
+                                            contributions in creating a better world for our seniors.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>COVID Home Testing (w/o Insurance)</td>
-                                        <td>290.00</td>
-                                        <td>9</td>
-                                        <td>True</td>
+                                        <td>What Makes High-Quality Home Care Services in San Francisco?</td>
+                                        <td>What Makes High-Quality Home Care Services in San Francisco?</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            With in-home care in San Francisco, your parent can be tended to without
+                                            needed to step outside their front.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
+                                            </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>COVID Home Testing (w/ Insurance)</td>
-                                        <td>190.00</td>
-                                        <td>91</td>
-                                        <td>True</td>
+                                        <td>Alzheimer’s Care in the Bay Area: The First Steps After Diagnosis</td>
+                                        <td>Alzheimer’s Care in the Bay Area: The First Steps After Diagnosis</td>
                                         <td>
-                                            <button class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
+                                            Home care services in the Bay Area are meant to add quality of life and
+                                            overall vitality to their client’s lives. Finding the most suitable
+                                            caregiver is integral to adequate healthcare staffing in the Bay Area.
+                                        </td>
+                                        <td>
+                                            <button class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
                                             </button>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
+                                            <button class="tablebtn tablebtn-clone">
+                                                <i class="fas fa-clone"></i>
+                                            </button>
                                         </td>
                                     </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -489,77 +551,16 @@
         </div>
     </main>
 
-    <!-- Modals -->
 
-    <div class="modal fade general-smallmodal" id="addnew-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="" class="modalform">
-                    <div class="modal-body">
-                        <div class="inpdropfield servimg">
-                            <label for="chooseFile" class="labtit">Service Image</label>
-                            <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
-                            <label class="file-upload file-select" for="chooseFile">
-                                <span class="centerbox">
-                                    <span class="file-select-button" id="fileName">
-                                        <img src="img/upload2.svg" alt="icon">
-                                        <span class="imp"><span>Upload</span> a file or drag and
-                                            drop</span>
-                                        <span class="imp">(File requirement: PNG, JPG and less than
-                                            1 MG )</span>
-                                    </span>
-                                    <span class="file-select-name noFile" id="noFile">
-                                    </span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group modalform__group">
-                            <label for="">Size</label>
-                            <div class="checkfield checkinrow">
-                                <input type="checkbox" id="sizecheck1">
-                                <label for="sizecheck1">Small</label>
-                                <input type="checkbox" id="sizecheck2">
-                                <label for="sizecheck2">Medium</label>
-                                <input type="checkbox" id="sizecheck3">
-                                <label for="sizecheck3">Large</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group modalform__group">
-                                    <label for="itname">Name</label>
-                                    <input type="text" id="itname" class="form-control" placeholder="Enter Item Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="price">Price</label>
-                                    <input type="text" id="price" class="form-control"
-                                        placeholder="Enter price per item" value="0">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="linkurl">Sort Order</label>
-                                    <input type="text" id="linkurl" class="form-control"
-                                        placeholder="Enter sort order greater than 0" value="0">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group modalform__group checkfield">
-                            <input type="checkbox" id="check">
-                            <label for="check">Is Active?</label>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn modal-btn allow-btn">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
+
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>

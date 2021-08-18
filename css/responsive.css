@@ -3,15 +3,15 @@
     .content__header h1,
     .titleh1,
     .content__header h2.titleh1 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .content__header h2 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .content__header h3 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .table-slidersubtitle {
@@ -22,7 +22,6 @@
         font-size: 22px;
     }
 
-
 }
 
 @media(max-width:1199.8px) {
@@ -30,7 +29,7 @@
     .content__header h1,
     .titleh1,
     .content__header h2.titleh1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .searchsection input {
@@ -79,7 +78,7 @@
         margin-bottom: 10px;
     }
 
-    .modal-btn {
+    .btn {
         font-size: 16px;
         padding: 8px;
         border-radius: 6px;
@@ -93,10 +92,6 @@
     .pageform__group input {
         height: 42px;
     }
-
-
-
-
 
 }
 
@@ -118,7 +113,6 @@
     .generaltable tr th,
     .generaltable tr td {
         min-width: 200px;
-        /* word-break: break-all; */
     }
 
     .table-wrapper {
@@ -135,13 +129,11 @@
         height: 36px;
     }
 
-
-
-
-
-
-
-
+    .justify-content-center .page-bottombtns button,
+    .justify-content-center .page-bottombtns a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
 
 }
 
@@ -235,11 +227,8 @@
 
     .page-bottombtns {
         max-width: 400px;
+        text-align: center;
     }
-
-
-
-
 
 }
 
@@ -325,14 +314,11 @@
         margin-bottom: 15px;
     }
 
-
-
-
-
-
-
-
-
+    .justify-content-center .page-bottombtns button,
+    .justify-content-center .page-bottombtns a {
+        max-width: 44%;
+        margin: 0 3px 10px 3px;
+    }
 
     .general-smallmodal .title {
         font-size: 18px;

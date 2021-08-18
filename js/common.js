@@ -20,13 +20,13 @@ $(document).ready(function () {
         $('.left-sb ul .item .sublist').slideUp();
     });
 
-    $('.left-sb ul .item').click(function (e) {
+    $('.left-sb ul .item > a').click(function (e) {
         e.preventDefault();
-        $('.left-sb ul .item').not($(this)).removeClass('active');
-        $(this).toggleClass('active');
+        $('.left-sb ul .item > a').parent().not($(this)).removeClass('active');
+        $(this).parent().toggleClass('active');
 
-        $('.left-sb ul .item .sublist').not($(this).find('.sublist')).slideUp();
-        $(this).find('.sublist').slideToggle();
+        $('.left-sb ul .item .sublist').not($(this).parent().find('.sublist')).slideUp();
+        $(this).parent().find('.sublist').slideToggle();
     });
 
     $(document).on('mouseenter', '.small-sb .left-sb', function () {
@@ -37,7 +37,6 @@ $(document).ready(function () {
         $('.pagecontent ').removeClass('small-sbhover');
         $('.left-sb ul .item .sublist').slideUp();
     });
-
 
     if ($(window).width() < 768) {
         $(document).on('click', '.header__burger', function () {
@@ -73,8 +72,6 @@ $(document).ready(function () {
 
     const addSelectAll = matches => {
         if (matches.length > 0) {
-            // Insert a special "Select all matches" item at the start of the 
-            // list of matched items.
             return [
                 { id: 'selectAll', text: 'Select all', matchIds: matches.map(match => match.id) },
                 ...matches
@@ -177,11 +174,40 @@ $(document).ready(function () {
     });
 
 
+    // datepicker
+    if ($('body *').is('.datepicker')) {
+        $('.datepicker').datepicker({
+            autoclose: true,
+            todayHighlight: true,
+            orientation: 'bottom',
+        });
+    }
 
+    // Upload img
+    $(".image-box").click(function (event) {
+        var previewImg = $(this).children("img");
 
+        $(this)
+            .siblings()
+            .children("input")
+            .trigger("click");
 
+        $(this)
+            .siblings()
+            .children("input")
+            .change(function () {
+                var reader = new FileReader();
 
-
+                reader.onload = function (e) {
+                    var urll = e.target.result;
+                    $(previewImg).attr("src", urll);
+                    previewImg.parent().css("background", "transparent");
+                    previewImg.show();
+                    previewImg.siblings("div").hide();
+                };
+                reader.readAsDataURL(this.files[0]);
+            });
+    });
 
 
 
