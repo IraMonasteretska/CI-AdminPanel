@@ -56,6 +56,8 @@ $(document).ready(function () {
         });
     }
 
+
+
     // upload file
     $('.chooseFile').bind('change', function () {
         var filename = $(this).val();

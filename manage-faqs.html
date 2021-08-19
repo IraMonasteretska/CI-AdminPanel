@@ -743,6 +743,56 @@
         </div>
     </div>
 
+    <div class="modal fade general-smallmodal" id="addnew-modal-2" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="modalform">
+                    <div class="modal-body">
+                        <div class="form-group modalform__group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="nameinp2">Title</label>
+                                    <input type="text" id="nameinp2" class="form-control"
+                                        placeholder="Do you offer live-in caregiving?">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="parentid">ParentId</label>
+                                    <select class="custom-select inmodal" data-placeholder="Select">
+                                        <option value=""></option>
+                                        <option value="1">Services Offered</option>
+                                        <option value="2">Subscription, Billing, and Cancellation</option>
+                                        <option value="3">Patient Change of Condition</option>
+                                        <option value="3">Concerns & Feedback</option>
+                                        <option value="3">COVID-Related Inquiries</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group modalform__group">
+                            <label for="anwer2">Answer</label>
+                            <textarea id="anwer2" placeholder="Yes, we offer 24/7 live-in care."></textarea>
+                        </div>
+                        <div class="form-group modalform__group">
+                            <label for="tags2">Tags</label>
+                            <input type="text" class="form-control" id="tags2" placeholder="Enter Tags">
+                        </div>
+                        <div class="form-group modalform__group checkfield">
+                            <input type="checkbox" id="check">
+                            <label for="check">Is Active?</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn modal-btn allow-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
