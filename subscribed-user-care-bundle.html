@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribed User Care Bundle</title>
+    <link rel="shortcut icon" href="favicon/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__leftsect">
+            <a href="#">
+                <img class="logoimg" src="img/dashlogo.png" alt="logo">
+                <img class="logoimg-small" src="img/logo-small.png" alt="logo">
+            </a>
+        </div>
+        <div class="header__rightsect">
+            <button class="header__burger">
+                <img src="img/menu-icon.svg" alt="menu">
+            </button>
+            <div class="header__user">
+                <div class="d-flex">
+                    <span class="header__username">
+                        Admin@careindeed.com
+                        <i>(admin)</i>
+                    </span>
+                    <div class="header__userpic rounded-pill">
+                        <img src="img/user.png" alt="user photo">
+                    </div>
+                </div>
+
+                <div class="header__userdropdown">
+                    <span class="header__username">
+                        Admin@careindeed.com
+                        <i>(admin)</i>
+                    </span>
+                    <ul>
+                        <li><a href="#">Edit Profile</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#logout">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row no-gutters pagecontent">
+            <aside class="left-sb">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-wrench"></i>
+                            <span>Application Settings</span>
+                        </a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="manage-zipcode.html">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Zipcode</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Service</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-assessment-questions.html">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Assessment Questions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-subscription-plans.html">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Subscription Plans</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-faqs.html">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage FAQs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-explore-services.html">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Explore Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-ppe-items.html">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage PPE Items</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-coupon.html">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Coupon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Pricing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-address-book"></i>
+                                    <span>Manage Promotion</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-user"></i>
+                            <span>User Management</span>
+                        </a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="care-admin-users.html">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Care Admin Users</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Care Users</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-user"></i>
+                            <span>Upgrade Requests</span>
+                        </a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Care Bundle</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-edit"></i>
+                            <span>CareIndeed Masters</span>
+                        </a>
+                        <ul class="sublist">
+                            <li>
+                                <a href="testimonials.html">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Testimonials</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-slider.html">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Manage Slider</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="menu-settings.html">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Menu Setting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manage-page.html">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Manage Page</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">
+                                    <i class="fa fa-question-circle"></i>
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blogs.html">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Blogs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Blog Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Event</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Static Page Content</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Video Manage</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>File Upload</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Site Map</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content-wrapper">
+                <div class="content-section">
+                    <div class="content__body">
+                        <h1 class="titleh1">Subscribed User Care Bundle</h1>
+                        <div class="content-container pb30 borderbott">
+                            <h4>Statuses & Settings</h4>
+                            <form action="" class="bigpage-form">
+                                <div class="row">
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="hourlyrate">Hourly rate</label>
+                                            <input type="text" id="hourlyrate" class="form-control" value="0.00">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="date">Service Start Date</label>
+                                            <div class="calendar-wrap">
+                                                <input class="datepicker" id="date" placeholder="Select">
+                                                <label for="date" class="calendar-icon"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group" id="enddate">
+                                            <label for="date2">Service End Date</label>
+                                            <div class="calendar-wrap">
+                                                <input class="datepicker" id="date2" placeholder="Select">
+                                                <label for="date2" class="calendar-icon"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="date1">Billing Date</label>
+                                            <div class="calendar-wrap">
+                                                <input class="datepicker" id="date1" placeholder="Select">
+                                                <label for="date1" class="calendar-icon"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label>Status</label>
+                                            <select class="custom-select inmodal" data-placeholder="Select">
+                                                <option value=""></option>
+                                                <option value="1">Pending</option>
+                                                <option value="2">Cancelled</option>
+                                                <option value="3">In progress</option>
+                                                <option value="4">Rejected</option>
+                                                <option value="5">Approved</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group pageform__group checkfield">
+                                            <input type="checkbox" id="isrepeat">
+                                            <label for="isrepeat">Is repeat?</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group pageform__group checkfield">
+                                            <input type="checkbox" id="cbact">
+                                            <label for="cbact">Care Bundle Active?</label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="page-bottombtns">
+                                        <button type="button" class="btn allow-btn">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="content-container pb30 mb30 borderbott">
+                            <h4>Related Contacts</h4>
+                            <div class="table-wrapper">
+                                <table class="table table-bordered table-hover generaltable">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Primary</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Relationship</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>Denn Test</td>
+                                            <td>4152181526</td>
+                                            <td>pepewi8783@eyeremind.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>test90 test90</td>
+                                            <td>09876544210</td>
+                                            <td>jacksoon41@gmail.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>test test</td>
+                                            <td>09876543216</td>
+                                            <td>JackSoon58@gmail.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>Denn Test</td>
+                                            <td>4152181526</td>
+                                            <td>pepewi8783@eyeremind.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>Denn Test</td>
+                                            <td>4152181526</td>
+                                            <td>pepewi8783@eyeremind.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>Denn Test</td>
+                                            <td>4152181526</td>
+                                            <td>pepewi8783@eyeremind.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>Denn Test</td>
+                                            <td>4152181526</td>
+                                            <td>pepewi8783@eyeremind.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" checked disabled>
+                                            </td>
+                                            <td>Denn Test</td>
+                                            <td>4152181526</td>
+                                            <td>pepewi8783@eyeremind.com</td>
+                                            <td>Friend</td>
+                                            <td>
+                                                <button class="tablebtn tablebtn-edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="content-container pb30 borderbott">
+                            <h4>Service Address</h4>
+                            <form action="" class="bigpage-form">
+                                <div class="row">
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="addrline1">Address Line 1 *</label>
+                                            <input type="text" id="addrline1" class="form-control"
+                                                value="2179 Santa Cruz Avenue menlo Park Test asd">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="addrline2">Address Line 2</label>
+                                            <input type="text" id="addrline2" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="zipcode">Zipcode</label>
+                                            <input type="text" id="zipcode" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="city">City *</label>
+                                            <input type="text" id="city" class="form-control" value="Menlo Park">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label>State *</label>
+                                            <select class="custom-select inmodal">
+                                                <option value="1">CA</option>
+                                                <option value="2">AL</option>
+                                                <option value="3">AK</option>
+                                                <option value="4">AZ</option>
+                                                <option value="5">AR</option>
+                                                <option value="6">CO</option>
+                                                <option value="7">CT</option>
+                                                <option value="8">DE</option>
+                                                <option value="9">FL</option>
+                                                <option value="10">GA</option>
+                                                <option value="11">HI</option>
+                                                <option value="12">ID</option>
+                                                <option value="13">IL</option>
+                                                <option value="14">IN</option>
+                                                <option value="15">IA</option>
+                                                <option value="16">KS</option>
+                                                <option value="17">KY</option>
+                                                <option value="18">LA</option>
+                                                <option value="19">ME</option>
+                                                <option value="20">MD</option>
+                                                <option value="21">MA</option>
+                                                <option value="22">MI</option>
+                                                <option value="23">MN</option>
+                                                <option value="24">MS</option>
+                                                <option value="25">MO</option>
+                                                <option value="26">MT</option>
+                                                <option value="27">NE</option>
+                                                <option value="28">NV</option>
+                                                <option value="29">NH</option>
+                                                <option value="30">NJ</option>
+                                                <option value="31">NM</option>
+                                                <option value="32">NY</option>
+                                                <option value="33">NC</option>
+                                                <option value="34">ND</option>
+                                                <option value="35">OH</option>
+                                                <option value="36">OK</option>
+                                                <option value="37">OR</option>
+                                                <option value="38">PA</option>
+                                                <option value="39">RI</option>
+                                                <option value="40">SC</option>
+                                                <option value="41">SD</option>
+                                                <option value="42">TN</option>
+                                                <option value="43">TX</option>
+                                                <option value="44">UT</option>
+                                                <option value="45">VT</option>
+                                                <option value="46">VA</option>
+                                                <option value="47">WA</option>
+                                                <option value="48">WV</option>
+                                                <option value="49">WI</option>
+                                                <option value="50">WY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- OR "STATE" input -->
+                                    <!-- <div class="col-xl-4 col-sm-6">
+                                        <div class="form-group pageform__group">
+                                            <label for="city">State *</label>
+                                            <input type="text" id="city" class="form-control" value="CA">
+                                        </div>
+                                    </div> -->
+                                    <div class="col-xl-8 col-sm-12">
+                                        <div class="form-group pageform__group">
+                                            <label for="parking-instr">Parking Instructions</label>
+                                            <textarea id="parking-instr"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="page-bottombtns">
+                                        <button type="button" class="btn allow-btn">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="content-container pb30 mb30 borderbott">
+                            <h4>Subscription Offers</h4>
+                            <div class="table-wrapper">
+                                <table class="table table-bordered table-hover generaltable">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Service</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Free Meals</td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Free Meals</td>
+                                            <td>0.00</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="content-container pb30 mb30 borderbott">
+                            <h4>Weekly Scheduled</h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>Current Plan: Premium Package (41hr and more)</p>
+                                </div>
+                                <div class="col-sm-6 d-flex justify-content-end">
+                                    <p>Scheduled: 42 hours</p>
+                                </div>
+                            </div>
+                            <div class="overflowscroll">
+                                <div class="w-shedule-wrap">
+                                    <div class="w-shedule-wrap__row">
+                                        <div class="wshedule__day">
+                                            <span class="active">Monday</span>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>From</p>
+                                        </div>
+                                        <div class="wshedule__select">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="Select">
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2" selected>06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>To</p>
+                                        </div>
+                                        <div class="wshedule__select">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="Select">
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2" selected>06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>for</p>
+                                        </div>
+                                        <div class="wshedule__select">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select sortselect" data-placeholder="Select"
+                                                    multiple="multiple">
+                                                    <option value="1">Companionship</option>
+                                                    <option value="2" selected>Errands</option>
+                                                    <option value="3">Light Meal Preparation</option>
+                                                    <option value="4">Light Housekeeping</option>
+                                                    <option value="5">Bed Linen</option>
+                                                    <option value="6">Bathing</option>
+                                                    <option value="7">Dressing</option>
+                                                    <option value="8">Toileting</option>
+                                                    <option value="9">Feeding</option>
+                                                    <option value="10">Pet Care</option>
+                                                    <option value="11">Transportation</option>
+                                                    <option value="12">Specialized Meal Preparation</option>
+                                                    <option value="13">Transferring (helping to get in/out of bed)
+                                                    </option>
+                                                    <option value="14">Medication Management (Additional Fee)</option>
+                                                    <option value="15">Medication Reminders</option>
+                                                    <option value="16">Care Management (Additional Fee)</option>
+                                                    <option value="17">Covid-19 Care (Additional Fee)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-shedule-wrap__row">
+                                        <div class="wshedule__day">
+                                            <span>Tuesday</span>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>From</p>
+                                        </div>
+                                        <div class="wshedule__select starttime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>To</p>
+                                        </div>
+                                        <div class="wshedule__select endtime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>for</p>
+                                        </div>
+                                        <div class="wshedule__select forwhat">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select sortselect" data-placeholder="Select"
+                                                    multiple="multiple" disabled>
+                                                    <option value="1">Companionship</option>
+                                                    <option value="2">Errands</option>
+                                                    <option value="3">Light Meal Preparation</option>
+                                                    <option value="4">Light Housekeeping</option>
+                                                    <option value="5">Bed Linen</option>
+                                                    <option value="6">Bathing</option>
+                                                    <option value="7">Dressing</option>
+                                                    <option value="8">Toileting</option>
+                                                    <option value="9">Feeding</option>
+                                                    <option value="10">Pet Care</option>
+                                                    <option value="11">Transportation</option>
+                                                    <option value="12">Specialized Meal Preparation</option>
+                                                    <option value="13">Transferring (helping to get in/out of bed)
+                                                    </option>
+                                                    <option value="14">Medication Management (Additional Fee)</option>
+                                                    <option value="15">Medication Reminders</option>
+                                                    <option value="16">Care Management (Additional Fee)</option>
+                                                    <option value="17">Covid-19 Care (Additional Fee)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-shedule-wrap__row">
+                                        <div class="wshedule__day">
+                                            <span>Wednesday</span>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>From</p>
+                                        </div>
+                                        <div class="wshedule__select starttime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>To</p>
+                                        </div>
+                                        <div class="wshedule__select endtime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>for</p>
+                                        </div>
+                                        <div class="wshedule__select forwhat">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select sortselect" data-placeholder="Select"
+                                                    multiple="multiple" disabled>
+                                                    <option value="1">Companionship</option>
+                                                    <option value="2">Errands</option>
+                                                    <option value="3">Light Meal Preparation</option>
+                                                    <option value="4">Light Housekeeping</option>
+                                                    <option value="5">Bed Linen</option>
+                                                    <option value="6">Bathing</option>
+                                                    <option value="7">Dressing</option>
+                                                    <option value="8">Toileting</option>
+                                                    <option value="9">Feeding</option>
+                                                    <option value="10">Pet Care</option>
+                                                    <option value="11">Transportation</option>
+                                                    <option value="12">Specialized Meal Preparation</option>
+                                                    <option value="13">Transferring (helping to get in/out of bed)
+                                                    </option>
+                                                    <option value="14">Medication Management (Additional Fee)</option>
+                                                    <option value="15">Medication Reminders</option>
+                                                    <option value="16">Care Management (Additional Fee)</option>
+                                                    <option value="17">Covid-19 Care (Additional Fee)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-shedule-wrap__row">
+                                        <div class="wshedule__day">
+                                            <span>Thursday</span>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>From</p>
+                                        </div>
+                                        <div class="wshedule__select starttime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>To</p>
+                                        </div>
+                                        <div class="wshedule__select endtime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>for</p>
+                                        </div>
+                                        <div class="wshedule__select forwhat">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select sortselect" data-placeholder="Select"
+                                                    multiple="multiple" disabled>
+                                                    <option value="1">Companionship</option>
+                                                    <option value="2">Errands</option>
+                                                    <option value="3">Light Meal Preparation</option>
+                                                    <option value="4">Light Housekeeping</option>
+                                                    <option value="5">Bed Linen</option>
+                                                    <option value="6">Bathing</option>
+                                                    <option value="7">Dressing</option>
+                                                    <option value="8">Toileting</option>
+                                                    <option value="9">Feeding</option>
+                                                    <option value="10">Pet Care</option>
+                                                    <option value="11">Transportation</option>
+                                                    <option value="12">Specialized Meal Preparation</option>
+                                                    <option value="13">Transferring (helping to get in/out of bed)
+                                                    </option>
+                                                    <option value="14">Medication Management (Additional Fee)</option>
+                                                    <option value="15">Medication Reminders</option>
+                                                    <option value="16">Care Management (Additional Fee)</option>
+                                                    <option value="17">Covid-19 Care (Additional Fee)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-shedule-wrap__row">
+                                        <div class="wshedule__day">
+                                            <span>Friday</span>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>From</p>
+                                        </div>
+                                        <div class="wshedule__select starttime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>To</p>
+                                        </div>
+                                        <div class="wshedule__select endtime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>for</p>
+                                        </div>
+                                        <div class="wshedule__select forwhat">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select sortselect" data-placeholder="Select"
+                                                    multiple="multiple" disabled>
+                                                    <option value="1">Companionship</option>
+                                                    <option value="2">Errands</option>
+                                                    <option value="3">Light Meal Preparation</option>
+                                                    <option value="4">Light Housekeeping</option>
+                                                    <option value="5">Bed Linen</option>
+                                                    <option value="6">Bathing</option>
+                                                    <option value="7">Dressing</option>
+                                                    <option value="8">Toileting</option>
+                                                    <option value="9">Feeding</option>
+                                                    <option value="10">Pet Care</option>
+                                                    <option value="11">Transportation</option>
+                                                    <option value="12">Specialized Meal Preparation</option>
+                                                    <option value="13">Transferring (helping to get in/out of bed)
+                                                    </option>
+                                                    <option value="14">Medication Management (Additional Fee)</option>
+                                                    <option value="15">Medication Reminders</option>
+                                                    <option value="16">Care Management (Additional Fee)</option>
+                                                    <option value="17">Covid-19 Care (Additional Fee)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-shedule-wrap__row">
+                                        <div class="wshedule__day">
+                                            <span>Saturday</span>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>From</p>
+                                        </div>
+                                        <div class="wshedule__select starttime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>To</p>
+                                        </div>
+                                        <div class="wshedule__select endtime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>for</p>
+                                        </div>
+                                        <div class="wshedule__select forwhat">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select sortselect" data-placeholder="Select"
+                                                    multiple="multiple" disabled>
+                                                    <option value="1">Companionship</option>
+                                                    <option value="2">Errands</option>
+                                                    <option value="3">Light Meal Preparation</option>
+                                                    <option value="4">Light Housekeeping</option>
+                                                    <option value="5">Bed Linen</option>
+                                                    <option value="6">Bathing</option>
+                                                    <option value="7">Dressing</option>
+                                                    <option value="8">Toileting</option>
+                                                    <option value="9">Feeding</option>
+                                                    <option value="10">Pet Care</option>
+                                                    <option value="11">Transportation</option>
+                                                    <option value="12">Specialized Meal Preparation</option>
+                                                    <option value="13">Transferring (helping to get in/out of bed)
+                                                    </option>
+                                                    <option value="14">Medication Management (Additional Fee)</option>
+                                                    <option value="15">Medication Reminders</option>
+                                                    <option value="16">Care Management (Additional Fee)</option>
+                                                    <option value="17">Covid-19 Care (Additional Fee)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-shedule-wrap__row">
+                                        <div class="wshedule__day">
+                                            <span>Sunday</span>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>From</p>
+                                        </div>
+                                        <div class="wshedule__select starttime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>To</p>
+                                        </div>
+                                        <div class="wshedule__select endtime">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select inmodal" data-placeholder="" disabled>
+                                                    <option value=""></option>
+                                                    <option value="1">06.00 AM</option>
+                                                    <option value="2">06.30 AM</option>
+                                                    <option value="3">07.00 AM</option>
+                                                    <option value="4">07.30 AM</option>
+                                                    <option value="5">08.00 AM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="wshedule__text">
+                                            <p>for</p>
+                                        </div>
+                                        <div class="wshedule__select forwhat">
+                                            <div class="form-group pageform__group">
+                                                <select class="custom-select sortselect" data-placeholder="Select"
+                                                    multiple="multiple" disabled>
+                                                    <option value="1">Companionship</option>
+                                                    <option value="2">Errands</option>
+                                                    <option value="3">Light Meal Preparation</option>
+                                                    <option value="4">Light Housekeeping</option>
+                                                    <option value="5">Bed Linen</option>
+                                                    <option value="6">Bathing</option>
+                                                    <option value="7">Dressing</option>
+                                                    <option value="8">Toileting</option>
+                                                    <option value="9">Feeding</option>
+                                                    <option value="10">Pet Care</option>
+                                                    <option value="11">Transportation</option>
+                                                    <option value="12">Specialized Meal Preparation</option>
+                                                    <option value="13">Transferring (helping to get in/out of bed)
+                                                    </option>
+                                                    <option value="14">Medication Management (Additional Fee)</option>
+                                                    <option value="15">Medication Reminders</option>
+                                                    <option value="16">Care Management (Additional Fee)</option>
+                                                    <option value="17">Covid-19 Care (Additional Fee)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="page-bottombtns">
+                                    <button type="button" class="btn allow-btn">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footline">
+                    Copyright © 2021 <a href="#">Care Indeed</a>. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade general-smallmodal" id="logout" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="title">Please Confirm</p>
+                    <div class="descr text-center">
+                        <p>Are you sure, you want to logout?</p>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn modal-btn allow-btn">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

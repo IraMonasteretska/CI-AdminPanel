@@ -45,7 +45,7 @@
                     </span>
                     <ul>
                         <li><a href="#">Edit Profile</a></li>
-                        <li><a href="#">Log Out</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#logout">Log Out</a></li>
                     </ul>
                 </div>
             </div>
@@ -524,6 +524,24 @@
                         <button type="button" class="btn modal-btn allow-btn">Save</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade general-smallmodal" id="logout" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="title">Please Confirm</p>
+                    <div class="descr text-center">
+                        <p>Are you sure, you want to logout?</p>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn modal-btn allow-btn">Ok</button>
+                </div>
             </div>
         </div>
     </div>
