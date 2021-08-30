@@ -101,12 +101,6 @@
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     }
 
-
-
-
-
-
-
 }
 
 @media(max-width:1024.8px) {
@@ -175,15 +169,6 @@
         margin-right: 5px;
         font-size: 14px;
     }
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -408,9 +393,6 @@
     .alertbox.v2 {
         top: 60px;
     }
-
-
-
 
 }
 

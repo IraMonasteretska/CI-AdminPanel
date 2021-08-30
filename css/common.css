@@ -1371,7 +1371,7 @@ header.header {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    background-image: url(../img/calendar2.svg);
+    background-image: url('../img/calendar2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
