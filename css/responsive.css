@@ -1,3 +1,28 @@
+@media(max-width:1600.8px) {
+    .abselement5:after {
+        border-top: 700px solid #269FA3;
+        border-right: 700px solid transparent;
+    }
+
+    #scene>div:nth-child(1) {
+        top: 70% !important;
+        right: 67% !important;
+    }
+
+    #scene>div:nth-child(2) {
+        top: 18% !important;
+        right: 39% !important;
+    }
+
+
+
+
+
+
+
+
+}
+
 @media(max-width:1440.8px) {
 
     .content__header h1,
@@ -101,6 +126,37 @@
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     }
 
+    #scene>div:nth-child(2) {
+        top: 27% !important;
+        right: 24% !important;
+    }
+
+    .abselement4:after {
+        border-left: 71px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 74px solid #269FA3;
+    }
+
+    #scene>div:nth-child(1) {
+        top: 75% !important;
+        right: 45% !important;
+    }
+
+    .abselement5:after {
+        border-top: 500px solid #269FA3;
+        border-right: 400px solid transparent;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media(max-width:1024.8px) {
@@ -126,6 +182,10 @@
     .modalform__group input,
     .pageform__group input {
         height: 42px;
+    }
+
+    #scene {
+        display: none;
     }
 
 }
@@ -277,6 +337,15 @@
         text-align: right;
     }
 
+    .abselement5 {
+        display: none;
+    }
+
+    .pagefulllogo {
+        width: 100px;
+    }
+
+
 }
 
 @media(max-width:575.8px) {
@@ -394,6 +463,17 @@
         top: 60px;
     }
 
+    .signpage__title {
+        font-size: 22px;
+    }
+
+    .signpage-formwrap {
+        max-width: 90%;
+    }
+
+    .pagefulllogo {
+        /* display: none; */
+    }
 }
 
 

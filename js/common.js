@@ -261,4 +261,18 @@ $(document).ready(function () {
     });
 
 
+    // SIgn In form
+    $('.signpage__linktext').click(function () {
+        $('.signin, .forgotpassword').toggleClass('hide');
+    })
+
+
+    if ($('body *').is('#scene')) {
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    }
+
+
+
+
 });
