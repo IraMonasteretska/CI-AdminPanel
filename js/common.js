@@ -27,6 +27,8 @@ $(document).ready(function () {
 
         $('.left-sb ul .item .sublist').not($(this).parent().find('.sublist')).slideUp();
         $(this).parent().find('.sublist').slideToggle();
+
+
     });
 
     $(document).on('mouseenter', '.small-sb .left-sb', function () {
@@ -271,7 +273,6 @@ $(document).ready(function () {
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
     }
-
 
 
 

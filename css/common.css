@@ -2017,6 +2017,9 @@ header.header {
     left: initial !important;
 }
 
+.left-sb .item.show ul.sublist {
+    display: block;
+}
 
 
 
