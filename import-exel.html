@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add testimonial</title>
+    <title>Import Price</title>
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -56,7 +56,7 @@
         <div class="row no-gutters pagecontent">
             <aside class="left-sb">
                 <ul>
-                    <li class="item">
+                    <li class="item show">
                         <a href="#">
                             <i class="fa fa-wrench"></i>
                             <span>Application Settings</span>
@@ -110,7 +110,7 @@
                                     <span>Manage Coupon</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Pricing</span>
@@ -158,13 +158,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="item show">
+                    <li class="item">
                         <a href="#">
                             <i class="fa fa-edit"></i>
                             <span>CareIndeed Masters</span>
                         </a>
                         <ul class="sublist">
-                            <li class="active">
+                            <li>
                                 <a href="testimonials.html">
                                     <i class="fa fa-circle"></i>
                                     <span>Testimonials</span>
@@ -243,67 +243,29 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__body">
-                        <h1 class="titleh1">Add Testimonial</h1>
+                        <h1 class="titleh1">Import Price</h1>
                         <form action="" class="bigpage-form">
                             <div class="row">
-                                <div class="col-xl-4 col-lg-12">
-                                    <div class="form-group pageform__group">
-                                        <label for="testimonby">Testimonials By <span>*</span></label>
-                                        <input type="text" id="testimonby" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-12">
-                                    <div class="form-group pageform__group">
-                                        <label for="testimontitle">Title <span>*</span></label>
-                                        <input type="text" id="testimontitle" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-12">
-                                    <div class="form-group pageform__group">
-                                        <label>Rating <span>*</span></label>
-                                        <select class="custom-select inmodal" data-placeholder="Select">
-                                            <option value=""></option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group pageform__group">
-                                        <label>Testimonials Content <span>*</span></label>
-                                        <div id="editor">
-                                            <p>This is the editor content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-7">
-                                    <div class="form-group pageform__group">
-                                        <label>Image</label>
-                                        <div class="inpdropfield">
-                                            <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
-                                            <label class="file-upload file-select" for="chooseFile">
-                                                <span class="centerbox">
-                                                    <span class="file-select-button" id="fileName">
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="uploadimgbox uploadimgbox__addfile">
+                                        <div class="col-ting">
+                                            <div class="control-group file-upload" id="file-upload1">
+                                                <div class="image-box text-center">
+                                                    <div class="infotext">
                                                         <img src="img/upload2.svg" alt="icon">
-                                                        <span class="imp"><span>Upload</span> a file or drag and
-                                                            drop</span>
-                                                        <span class="imp">(File requirement: PDF, PPT and less than
-                                                            1 MG )</span>
-                                                    </span>
-                                                    <span class="file-select-name noFile" id="noFile">
-                                                    </span>
-                                                </span>
-                                            </label>
+                                                        <p><span>Upload</span> a file or drag and
+                                                            drop</p>
+                                                        <p>(File requirement: PDF, PPT and less than 1 MG )</p>
+                                                    </div>
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="controls" style="display: none;">
+                                                    <input type="file" name="contact_image_1" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group modalform__group checkfield">
-                                <input type="checkbox" id="check">
-                                <label for="check">Is Active?</label>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <div class="page-bottombtns">

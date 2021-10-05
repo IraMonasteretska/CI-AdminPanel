@@ -2090,7 +2090,12 @@ header.header {
     color: #f07639;
 }
 
-
+a.tablebtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 
 
 

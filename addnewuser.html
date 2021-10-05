@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add testimonial</title>
+    <title>Add User</title>
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -37,7 +37,6 @@
                         <img src="img/user.png" alt="user photo">
                     </div>
                 </div>
-
                 <div class="header__userdropdown">
                     <span class="header__username">
                         Admin@careindeed.com
@@ -56,7 +55,7 @@
         <div class="row no-gutters pagecontent">
             <aside class="left-sb">
                 <ul>
-                    <li class="item">
+                    <li class="item ">
                         <a href="#">
                             <i class="fa fa-wrench"></i>
                             <span>Application Settings</span>
@@ -124,7 +123,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="item">
+                    <li class="item show">
                         <a href="#">
                             <i class="fa fa-user"></i>
                             <span>User Management</span>
@@ -136,8 +135,8 @@
                                     <span>Care Admin Users</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="active">
+                                <a href="care-users.html">
                                     <i class="fa fa-circle"></i>
                                     <span>Care Users</span>
                                 </a>
@@ -158,13 +157,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="item show">
+                    <li class="item">
                         <a href="#">
                             <i class="fa fa-edit"></i>
                             <span>CareIndeed Masters</span>
                         </a>
                         <ul class="sublist">
-                            <li class="active">
+                            <li>
                                 <a href="testimonials.html">
                                     <i class="fa fa-circle"></i>
                                     <span>Testimonials</span>
@@ -243,67 +242,85 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__body">
-                        <h1 class="titleh1">Add Testimonial</h1>
+                        <h1 class="titleh1">Add User</h1>
                         <form action="" class="bigpage-form">
                             <div class="row">
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="form-group pageform__group">
-                                        <label for="testimonby">Testimonials By <span>*</span></label>
-                                        <input type="text" id="testimonby" class="form-control">
+                                        <label for="au-fname">First Name <span>*</span></label>
+                                        <input type="text" id="au-fname" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="form-group pageform__group">
-                                        <label for="testimontitle">Title <span>*</span></label>
-                                        <input type="text" id="testimontitle" class="form-control">
+                                        <label for="au-lname">Last Name <span>*</span></label>
+                                        <input type="text" id="au-lname" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="form-group pageform__group">
-                                        <label>Rating <span>*</span></label>
-                                        <select class="custom-select inmodal" data-placeholder="Select">
-                                            <option value=""></option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
+                                        <label for="au-name">User Name <span>*</span></label>
+                                        <input type="text" id="au-name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="au-email">Email <span>*</span></label>
+                                        <input type="text" id="au-email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="au-pass">Password <span>*</span></label>
+                                        <input type="password" id="au-pass" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="au-mob">Mobile <span>*</span></label>
+                                        <input type="text" id="au-mob" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="au-tel">Phone <span>*</span></label>
+                                        <input type="text" id="au-tel" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="au-zip">Zip </label>
+                                        <input type="text" id="au-zip" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="address1">Address 1 <span>*</span></label>
+                                        <textarea type="text" id="address1" class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group pageform__group">
-                                        <label>Testimonials Content <span>*</span></label>
-                                        <div id="editor">
-                                            <p>This is the editor content.</p>
-                                        </div>
+                                        <label for="address2">Address 2 <span>*</span></label>
+                                        <textarea type="text" id="address2" class="form-control"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-7">
+                                <div class="col-12">
                                     <div class="form-group pageform__group">
-                                        <label>Image</label>
-                                        <div class="inpdropfield">
-                                            <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
-                                            <label class="file-upload file-select" for="chooseFile">
-                                                <span class="centerbox">
-                                                    <span class="file-select-button" id="fileName">
-                                                        <img src="img/upload2.svg" alt="icon">
-                                                        <span class="imp"><span>Upload</span> a file or drag and
-                                                            drop</span>
-                                                        <span class="imp">(File requirement: PDF, PPT and less than
-                                                            1 MG )</span>
-                                                    </span>
-                                                    <span class="file-select-name noFile" id="noFile">
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <label for="address3">Address 3 <span>*</span></label>
+                                        <textarea type="text" id="address3" class="form-control"></textarea>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group modalform__group checkfield">
-                                <input type="checkbox" id="check">
-                                <label for="check">Is Active?</label>
+                                <div class="col-12">
+                                    <div class="form-group modalform__group checkfield">
+                                        <input type="checkbox" id="check">
+                                        <label for="check">Is Active?</label>
+                                    </div>
+                                </div>
+
+
+
                             </div>
                             <div class="d-flex justify-content-end">
                                 <div class="page-bottombtns">
@@ -320,6 +337,10 @@
             </div>
         </div>
     </main>
+
+
+
+    <!-- Modals -->
 
     <div class="modal fade general-smallmodal" id="logout" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -343,7 +364,6 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/select2.min.js"></script>
-    <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
     <script src="js/common.js"></script>
 </body>
 

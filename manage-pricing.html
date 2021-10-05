@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
+    <title>Manage Pricing</title>
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -37,7 +37,6 @@
                         <img src="img/user.png" alt="user photo">
                     </div>
                 </div>
-
                 <div class="header__userdropdown">
                     <span class="header__username">
                         Admin@careindeed.com
@@ -56,7 +55,7 @@
         <div class="row no-gutters pagecontent">
             <aside class="left-sb">
                 <ul>
-                    <li class="item">
+                    <li class="item show">
                         <a href="#">
                             <i class="fa fa-wrench"></i>
                             <span>Application Settings</span>
@@ -110,7 +109,7 @@
                                     <span>Manage Coupon</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Pricing</span>
@@ -158,13 +157,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="item show">
+                    <li class="item">
                         <a href="#">
                             <i class="fa fa-edit"></i>
                             <span>CareIndeed Masters</span>
                         </a>
                         <ul class="sublist">
-                            <li class="active">
+                            <li>
                                 <a href="testimonials.html">
                                     <i class="fa fa-circle"></i>
                                     <span>Testimonials</span>
@@ -243,7 +242,7 @@
             <div class="content-wrapper">
                 <div class="content-section">
                     <div class="content__header">
-                        <h1>Testimonials</h1>
+                        <h1>Manage Pricing</h1>
                         <div class="row no-gutters">
                             <div class="col-lg-6">
                                 <div class="input-group searchsection">
@@ -255,189 +254,153 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="btngroup d-flex justify-content-end">
-                                    <a href="testimonial-add.html" class="greenbtn">
+                                    <a href="add-price.html" class="greenbtn">
                                         Add New
+                                    </a>
+                                    <a href="import-exel.html" class="greenbtn">
+                                        Import Excel
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="content__body">
                         <div class="table-wrapper">
                             <table class="table table-bordered table-hover generaltable">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">Testimonials By</th>
-                                        <th scope="col">Testimonials Content</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Rate</th>
+                                        <th scope="col">Hour</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Omer</td>
+                                        <td>Starter</td>
+                                        <td>44</td>
+                                        <td>8</td>
                                         <td>
-                                            CareIndeed provided the best case we have received so far. They seem to
-                                            invest highly in their care-giver's development so the results are not
-                                            surprising. Thank you CareIndeed team for your great service!</td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Al Thiede</td>
+                                        <td>Starter</td>
+                                        <td>44</td>
+                                        <td>9</td>
                                         <td>
-                                            THE MANAGERS I DEALT WITH,HANNA AND MARY, RAN A TIGHT SHIP, CLOSELY
-                                            MONITORING AND ASSESSING THE ACTIVITIES AND WHEREABOUTS OF THEIR EMPLOYEES.
-                                            MOST DAYS WERE A NEW ADVENTURE, OFTEN REQUIRING QUICK CHANGES TO SCHEDULES,
-                                            HOURS AND ACTIVITIES.
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Paul and Alice Morin</td>
+                                        <td>Starter</td>
+                                        <td>44</td>
+                                        <td>10</td>
                                         <td>
-                                            She did a fine job but our situation changed. Thank you for your help .
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Jeff Sutton</td>
+                                        <td>Starter</td>
+                                        <td>43</td>
+                                        <td>11</td>
                                         <td>
-                                            Skilled, friendly caregivers for my young adult daughter (recovering from
-                                            brain injury). They are available 24/7 and are very flexible about changes
-                                            to schedule.
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Larry Persaud</td>
+                                        <td>Starter</td>
+                                        <td>43</td>
+                                        <td>12</td>
                                         <td>
-                                            Great Service
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Cynthia Huertas</td>
+                                        <td>Starter</td>
+                                        <td>42</td>
+                                        <td>13</td>
                                         <td>
-
-                                            I have been working with Care Indeed for more than a year now and have found
-                                            their service and staff exemplary! I have a very challenging disabled adult
-                                            child that requires round the clock care. Management and staff have been
-                                            great. In particular, Joett, Luigi and Martin have done a great job making
-                                            sure my daughter has the care she needs. Communication avenues are solid. I
-                                            started by adding them in part time, it was not long before we decided to
-                                            use Care Indeed 100%! Today we have a wonderful main, full time care giver
-                                            that regularly exceeds our expectation for good care - maybe name change to
-                                            'Great' Care Indeed! So grateful for this agency and it's staff!
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Clydene Bultman</td>
+                                        <td>Starter</td>
+                                        <td>42</td>
+                                        <td>14</td>
                                         <td>
-
-                                            Care Indeed is a valued partner for our family. We entrust them with
-                                            understanding our specific needs, matching the appropriate caregiver with
-                                            those needs and providing flexibility on scheduling. Additionally, vetting
-                                            and training of their caregivers is an important part of their service and
-                                            they do this very well. Having a company do all of the above is no small
-                                            task. I took care of one parent without using a service in the past and I
-                                            can say that the 'peace of mind' knowing that someone is assisting in the
-                                            challenging privilege of taking care of an elderly person is a highly valued
-                                            asset.
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Martha</td>
+                                        <td>Starter</td>
+                                        <td>42</td>
+                                        <td>15</td>
                                         <td>
-                                            Office staff is exceptionally responsive to my and my son's (my primary
-                                            caregiver) needs, with a hands-on personal touch. Attendants are
-                                            professional, compassionate and have lots of patience with me, for which I
-                                            am very grateful. The only reason this rating is not 5 stars is for lack of
-                                            continuity of care - too many changes in caregivers. Otherwise, I highly
-                                            reccommend this service.
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Paul Vankeuren</td>
+                                        <td>Starter</td>
+                                        <td>41</td>
+                                        <td>16</td>
                                         <td>
-                                            Good basic work!
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Suzanne Patti</td>
+                                        <td>Starter</td>
+                                        <td>41</td>
+                                        <td>17</td>
                                         <td>
-                                            Reliable and caring staff you can trust your loved one with!
-                                        </td>
-                                        <td>
-                                            <button class="tablebtn tablebtn-edit">
+                                            <a href="#" class="tablebtn tablebtn-edit">
                                                 <i class="fa fa-edit"></i>
-                                            </button>
+                                            </a>
                                             <button class="tablebtn tablebtn-delete">
                                                 <i class="fas fa-trash"></i>
                                             </button>
@@ -446,7 +409,6 @@
                                 </tbody>
                             </table>
                         </div>
-
                         <div class="pagination">
                             <ul>
                                 <li>
@@ -497,6 +459,30 @@
                                 </li>
                             </ul>
                         </div>
+                        <nav class="custom-pagination">
+                            <ul class="pagination pagination__box">
+                                <li class="page-item disabled">
+                                    <a aria-label="Previous" href="JavaScript:void(0);" class="page-link"
+                                        data-pageindex="0"><i class="fas fa-chevron-left" aria-hidden="true"></i>
+                                        Prev</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="JavaScript:void(0);" class="page-link" data-pageindex="1">1 <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li>
+                                    <a href="JavaScript:void(0);" class="page-link" data-pageindex="2">2</a>
+                                </li>
+                                <li>
+                                    <a href="JavaScript:void(0);" class="page-link" data-pageindex="3">3</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a aria-label="Next" class="page-link" href="JavaScript:void(0)"
+                                        data-pageindex="2">Next
+                                        <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 <div class="footline">
@@ -505,6 +491,90 @@
             </div>
         </div>
     </main>
+
+
+
+    <!-- Modals -->
+    <div class="modal fade general-smallmodal" id="uploadmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="title">Upload File</p>
+                    <div class="inpdropfield">
+                        <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
+                        <label class="file-upload file-select" for="chooseFile">
+                            <span class="centerbox">
+                                <span class="file-select-button" id="fileName">
+                                    <img src="img/upload2.svg" alt="icon">
+                                    <span class="imp"><span>Upload</span> a file or drag and
+                                        drop</span>
+                                    <span class="imp">(File requirement: PDF, PPT and less than
+                                        1 MG )</span>
+                                </span>
+                                <span class="file-select-name noFile" id="noFile">
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn modal-btn allow-btn">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade general-smallmodal" id="addnew-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="modalform">
+                    <div class="modal-body">
+                        <p class="title">Add New ZipCode</p>
+                        <div class="form-group modalform__group">
+                            <label for="code">Code</label>
+                            <input type="text" class="form-control" id="code" placeholder="Enter Zipcode">
+                        </div>
+                        <div class="form-group modalform__group checkfield">
+                            <input type="checkbox" id="check">
+                            <label for="check">Is Active?</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn modal-btn allow-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade general-smallmodal" id="editzip-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="modalform">
+                    <div class="modal-body">
+                        <p class="title">Edit ZipCode</p>
+                        <div class="form-group modalform__group">
+                            <label for="code">Code</label>
+                            <input type="text" id="code" placeholder="Enter Zipcode">
+                        </div>
+                        <div class="form-group modalform__group checkfield">
+                            <input type="checkbox" id="check2">
+                            <label for="check2">Is Active?</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn modal-btn allow-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade general-smallmodal" id="logout" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -523,7 +593,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
