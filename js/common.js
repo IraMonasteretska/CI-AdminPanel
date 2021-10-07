@@ -275,5 +275,12 @@ $(document).ready(function () {
     }
 
 
+    // time picker
+    if ($('body *').is('.timeinp')) {
+        $('.timeinp').timepicki();
+    }
+
+
+
 
 });

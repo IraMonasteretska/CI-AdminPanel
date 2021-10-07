@@ -2095,9 +2095,12 @@ a.tablebtn {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    vertical-align: bottom;
 }
 
-
+.datetime+div {
+    max-width: 100% !important;
+}
 
 
 
