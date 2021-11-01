@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Explore Services</title>
+    <title>Add Slider</title>
     <link rel="shortcut icon" href="favicon/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -56,7 +56,7 @@
         <div class="row no-gutters pagecontent">
             <aside class="left-sb">
                 <ul>
-                    <li class="item show">
+                    <li class="item">
                         <a href="#">
                             <i class="fa fa-wrench"></i>
                             <span>Application Settings</span>
@@ -92,7 +92,7 @@
                                     <span>Manage FAQs</span>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="manage-explore-services.html">
                                     <i class="fa fa-address-book"></i>
                                     <span>Manage Explore Services</span>
@@ -158,7 +158,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="item">
+                    <li class="item show">
                         <a href="#">
                             <i class="fa fa-edit"></i>
                             <span>CareIndeed Masters</span>
@@ -170,7 +170,7 @@
                                     <span>Testimonials</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="manage-slider.html">
                                     <i class="fa fa-circle"></i>
                                     <span>Manage Slider</span>
@@ -242,126 +242,108 @@
             </aside>
             <div class="content-wrapper">
                 <div class="content-section">
-                    <div class="content__header">
-                        <h1>Manage Explore Services</h1>
-                        <div class="row no-gutters">
-                            <div class="col-lg-6">
-                                <div class="input-group searchsection">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                    <div class="input-group-append">
-                                        <button class="btn searchbtn" type="button"></button>
+                    <div class="content__body">
+                        <h1 class="titleh1">Add Slider</h1>
+                        <form action="" class="bigpage-form">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="linkbtntext">Link button text</label>
+                                        <input type="text" id="linkbtntext" class="form-control">
                                     </div>
                                 </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="linkbtnurl">Link Button Url</label>
+                                        <input type="text" id="linkbtnurl" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label for="sliderheader">Slider Header <span>*</span></label>
+                                        <input type="text" id="sliderheader" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label>Page Menu <span>*</span></label>
+                                        <select class="custom-select inmodal" data-placeholder="Select">
+                                            <option value=""></option>
+                                            <option value="1">Services</option>
+                                            <option value="2">Home</option>
+                                            <option value="3">Locations</option>
+                                            <option value="4">Contact-Us</option>
+                                            <option value="5">Our Mission</option>
+                                            <option value="6">Testimonials</option>
+                                            <option value="7">Care Provider Training</option>
+                                            <option value="8">Caregiver Portal</option>
+                                            <option value="9">Join our care community network</option>
+                                            <option value="10">Live-In Care</option>
+                                            <option value="11">Hourly Care</option>
+                                            <option value="12">Non-Medical Staffing</option>
+                                            <option value="13">What is a caregiver?</option>
+                                            <option value="14">Ask vanessa</option>
+                                            <option value="15">Newsletter</option>
+                                            <option value="16">Classes and seminars</option>
+                                            <option value="17">Campbell</option>
+                                            <option value="18">East Bay – Walnut Creek</option>
+                                            <option value="19">Menlo Park</option>
+                                            <option value="20">Palo Alto</option>
+                                            <option value="21">San Francisco</option>
+                                            <option value="22">San Mateo</option>
+                                            <option value="23">Seattle</option>
+                                            <option value="24">Bellevue</option>
+                                            <option value="25">Virtual Reality Training</option>
+                                            <option value="26">Parkinson</option>
+                                            <option value="27">EducationResource</option>
+                                            <option value="28">EducationResourceDetails</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group pageform__group">
+                                        <label>Slider Content <span>*</span></label>
+                                        <div id="editor">
+                                            <p>This is the editor content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="form-group pageform__group">
+                                        <label>Upload Image</label>
+                                        <div class="uploadimgbox uploadimgbox__addfile">
+                                            <div class="col-ting mt0">
+                                                <div class="control-group file-upload" id="file-upload1">
+                                                    <div class="image-box text-center">
+                                                        <div class="infotext">
+                                                            <img src="img/upload2.svg" alt="icon">
+                                                            <p><span>Upload</span> a file or drag and
+                                                                drop</p>
+                                                            <p>(File requirement: PDF, PPT and less than 1 MG )</p>
+                                                        </div>
+                                                        <img src="" alt="">
+                                                    </div>
+                                                    <div class="controls" style="display: none;">
+                                                        <input type="file" name="contact_image_1" accept="image/*" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-lg-6">
-                                <div class="btngroup d-flex justify-content-end">
-                                    <button class="greenbtn" data-toggle="modal" data-target="#addnew-modal">
-                                        Add New
-                                    </button>
+                            <div class="form-group modalform__group checkfield">
+                                <input type="checkbox" id="check">
+                                <label for="check">Is Active?</label>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="page-bottombtns threebtn">
+                                    <a href="manage-page.html" class="btn cancel-btn">Cancel</a>
+                                    <button type="button" class="btn allow-btn">Save</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="content__body">
-                        <div class="table-wrapper">
-                            <table class="table table-bordered table-hover generaltable">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th scope="col">Service name</th>
-                                        <th scope="col">Link URL</th>
-                                        <th scope="col">Link Text</th>
-                                        <th scope="col">Sort Order</th>
-                                        <th scope="col">Is Active</th>
-                                        <th scope="col">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Care bundle</td>
-                                        <td>/CareBundle</td>
-                                        <td>Learn More</td>
-                                        <td>1</td>
-                                        <td>True</td>
-                                        <td>
-                                            <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CI-Community</td>
-                                        <td>/ci-community</td>
-                                        <td>Learn More</td>
-                                        <td>2</td>
-                                        <td>True</td>
-                                        <td>
-                                            <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
-                                                data-target="#addnew-modal">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            <button class="tablebtn tablebtn-delete">
-                                                <i class="fas fa-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="pagination">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.41 10.59L7.82 6L12.41 1.41L11 0L5 6L11 12L12.41 10.59ZM0 0H2V12H0V0Z"
-                                                fill="black"></path>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 1.41L3.42 6L8 10.59L6.59 12L0.590001 6L6.59 -1.23266e-07L8 1.41Z"
-                                                fill="black"></path>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><span>...</span></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">6</a></li>
-                                <li>
-                                    <a href="#">
-                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z"
-                                                fill="black"></path>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.589844 1.41L5.17984 6L0.589844 10.59L1.99984 12L7.99984 6L1.99984 0L0.589844 1.41ZM10.9998 0H12.9998V12H10.9998V0Z"
-                                                fill="black"></path>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="footline">
@@ -370,80 +352,6 @@
             </div>
         </div>
     </main>
-
-    <!-- Modals -->
-
-    <div class="modal fade general-smallmodal" id="addnew-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="" class="modalform">
-                    <div class="modal-body">
-
-                        <div class="uploadimgbox uploadimgbox__addfile">
-                            <div class="col-ting">
-                                <div class="control-group file-upload" id="file-upload1">
-                                    <div class="image-box text-center">
-                                        <div class="infotext">
-                                            <img src="img/upload2.svg" alt="icon">
-                                            <p><span>Upload</span> a file or drag and
-                                                drop</p>
-                                            <p>(File requirement: PDF, PPT and less than 1 MG )</p>
-                                        </div>
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="controls" style="display: none;">
-                                        <input type="file" name="contact_image_1" accept="image/*" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="servname">Service Name</label>
-                                    <input type="text" id="servname" class="form-control"
-                                        placeholder="Enter Service Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="linktext">Link Text</label>
-                                    <input type="text" id="linktext" class="form-control" placeholder="Enter Link Text">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="linkurl">Link URL</label>
-                                    <input type="text" id="linkurl" class="form-control" placeholder="Enter Link URL">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group modalform__group">
-                                    <label for="sortorder">Sort Order</label>
-                                    <input type="text" id="sortorder" class="form-control"
-                                        placeholder="Enter Sort order greater than 0" value="0">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group modalform__group">
-                            <label for="descriptionta">Description</label>
-                            <textarea id="descriptionta" cols="30" rows="10" placeholder="Enter Description"></textarea>
-                        </div>
-                        <div class="form-group modalform__group checkfield">
-                            <input type="checkbox" id="check">
-                            <label for="check">Is Active?</label>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn modal-btn allow-btn">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <div class="modal fade general-smallmodal" id="logout" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -467,6 +375,7 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/select2.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
     <script src="js/common.js"></script>
 </body>
 

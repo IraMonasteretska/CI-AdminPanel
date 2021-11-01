@@ -247,22 +247,23 @@
                         <form action="" class="bigpage-form">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-12">
-                                    <div class="uploadimgbox uploadimgbox__addfile">
-                                        <div class="col-ting">
-                                            <div class="control-group file-upload" id="file-upload1">
-                                                <div class="image-box text-center">
-                                                    <div class="infotext">
+                                    <div class="form-group pageform__group">
+                                        <div class="inpdropfield">
+                                            <input type="file" name="chooseFile" id="chooseFile" class="chooseFile"
+                                                accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                                            <label class=" file-upload file-select" for="chooseFile">
+                                                <span class="centerbox">
+                                                    <span class="file-select-button" id="fileName">
                                                         <img src="img/upload2.svg" alt="icon">
-                                                        <p><span>Upload</span> a file or drag and
-                                                            drop</p>
-                                                        <p>(File requirement: PDF, PPT and less than 1 MG )</p>
-                                                    </div>
-                                                    <img src="" alt="">
-                                                </div>
-                                                <div class="controls" style="display: none;">
-                                                    <input type="file" name="contact_image_1" />
-                                                </div>
-                                            </div>
+                                                        <span class="imp"><span>Upload</span> a file or drag and
+                                                            drop</span>
+                                                        <span class="imp">(File requirement: PDF, PPT and less than 1
+                                                            MG )</span>
+                                                    </span>
+                                                    <span class="file-select-name noFile" id="noFile">
+                                                    </span>
+                                                </span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>

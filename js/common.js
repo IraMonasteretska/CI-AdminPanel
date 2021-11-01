@@ -281,6 +281,30 @@ $(document).ready(function () {
     }
 
 
+    // 29.10
+    let relationShipSelect = $('#relationship-choose'),
+        relationShipTypeSelect = $('.relshchoosebox'),
+        insuranceId = $('.insuranceid-box');
+    $(relationShipSelect).change(function () {
+        if ($(relationShipSelect).val() == 'family') {
+            $(relationShipTypeSelect).addClass('show');
+            // console.log('asdadasdasd');
+        } else {
+            $(relationShipTypeSelect).removeClass('show');
+        }
+
+        if ($(relationShipSelect).val() == 'company') {
+            $(insuranceId).addClass('show');
+        } else {
+            $(insuranceId).removeClass('show');
+        }
+
+
+
+    });
+
+
+
 
 
 });

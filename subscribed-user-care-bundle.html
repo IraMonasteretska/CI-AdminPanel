@@ -341,9 +341,10 @@
                                             <td>pepewi8783@eyeremind.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -355,9 +356,10 @@
                                             <td>jacksoon41@gmail.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -369,9 +371,10 @@
                                             <td>JackSoon58@gmail.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -383,9 +386,10 @@
                                             <td>pepewi8783@eyeremind.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -397,9 +401,10 @@
                                             <td>pepewi8783@eyeremind.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -411,9 +416,10 @@
                                             <td>pepewi8783@eyeremind.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -425,9 +431,10 @@
                                             <td>pepewi8783@eyeremind.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -439,9 +446,10 @@
                                             <td>pepewi8783@eyeremind.com</td>
                                             <td>Friend</td>
                                             <td>
-                                                <button class="tablebtn tablebtn-edit">
+                                                <a href="#" class="tablebtn tablebtn-edit" data-toggle="modal"
+                                                    data-target="#related-contacts">
                                                     <i class="fa fa-edit"></i>
-                                                </button>
+                                                </a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -1069,6 +1077,109 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade general-smallmodal" id="related-contacts" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="modalform">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="fname">First Name <span>*</span></label>
+                                    <input type="text" id="fname" class="form-control" placeholder="Enter First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="lname">Last Name <span>*</span></label>
+                                    <input type="text" id="lname" class="form-control" placeholder="Enter Last Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="phonenum">Phone Number</label>
+                                    <input type="tel" id="phonenum" class="form-control"
+                                        placeholder="Enter Phone Mumber">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group modalform__group">
+                                    <label for="emailaddress">Email Address</label>
+                                    <input type="email" id="emailaddress" class="form-control"
+                                        placeholder="Enter Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group pageform__group">
+                                    <label>Contact Type</label>
+                                    <select class="custom-select" data-placeholder="Select" multiple="multiple"
+                                        id="my-select">
+                                        <option value="1">Payor</option>
+                                        <option value="2">Primary Contact</option>
+                                        <option value="3">Emergency Contact</option>
+                                        <option value="4">POA (Power of Attorney)</option>
+                                        <option value="5">Care Recipient</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group pageform__group">
+                                    <label>Relationship</label>
+                                    <select class="custom-select inmodal" data-placeholder="" id="relationship-choose">
+                                        <option value=""></option>
+                                        <option value="family">Family</option>
+                                        <option value="friend">Friend</option>
+                                        <option value="company">Insurance Company</option>
+                                        <option value="neighbor">Neighbor</option>
+                                        <option value="other">Others</option>
+                                        <option value="self">Self</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group pageform__group relshchoosebox">
+                                    <label>Relationship</label>
+                                    <select class="custom-select inmodal" data-placeholder=""
+                                        id="relationshiptype-choose">
+                                        <option value="1">Father</option>
+                                        <option value="2">Mother</option>
+                                        <option value="3">Daughter</option>
+                                        <option value="4">Son</option>
+                                        <option value="5">Father-In-Law</option>
+                                        <option value="6">Mother-In-Law</option>
+                                        <option value="7">Spouse</option>
+                                        <option value="8">Brother</option>
+                                        <option value="9">Sister</option>
+                                        <option value="10">Son-In-Law</option>
+                                        <option value="11">Daughter-In-Law</option>
+                                        <option value="12">Grandson</option>
+                                        <option value="13">Granddaughter</option>
+                                        <option value="14">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group modalform__group insuranceid-box">
+                                    <label for="insuranceid">Insurance ID</label>
+                                    <input type="text" id="insuranceid" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group modalform__group checkfield">
+                            <input type="checkbox" id="check">
+                            <label for="check">Is Active?</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn modal-btn cancel-btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn modal-btn allow-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
